@@ -47,8 +47,8 @@
         <entry file="file://$PROJECT_DIR$/README.md">
           <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
             <state split_layout="SPLIT">
-              <first_editor relative-caret-position="782">
-                <caret line="73" column="33" lean-forward="true" selection-start-line="73" selection-start-column="33" selection-end-line="73" selection-end-column="33" />
+              <first_editor relative-caret-position="207">
+                <caret line="9" column="9" lean-forward="true" selection-start-line="9" selection-start-column="9" selection-end-line="9" selection-end-column="9" />
               </first_editor>
               <second_editor />
             </state>
@@ -185,12 +185,12 @@
         <option value="$PROJECT_DIR$/public/js/CloudDisk.js" />
         <option value="$PROJECT_DIR$/service/index.php" />
         <option value="$PROJECT_DIR$/public/js/CloudClient.js" />
-        <option value="$PROJECT_DIR$/public/module/CloudSetting.html" />
         <option value="$PROJECT_DIR$/main.html" />
         <option value="$PROJECT_DIR$/public/js/Slimf.js" />
         <option value="$PROJECT_DIR$/config/README.md" />
         <option value="$PROJECT_DIR$/public/module/CloudCouple.html" />
         <option value="$PROJECT_DIR$/README.md" />
+        <option value="$PROJECT_DIR$/public/module/CloudSetting.html" />
       </list>
     </option>
   </component>
@@ -288,6 +288,17 @@
               <item name="Cloud" type="462c0819:PsiDirectoryNode" />
               <item name="public" type="462c0819:PsiDirectoryNode" />
               <item name="css" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Cloud" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Cloud" type="462c0819:PsiDirectoryNode" />
+              <item name="public" type="462c0819:PsiDirectoryNode" />
+              <item name="module" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Cloud" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Cloud" type="462c0819:PsiDirectoryNode" />
+              <item name="screen" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -742,12 +753,12 @@
       <workItem from="1528350173927" duration="74915000" />
       <workItem from="1528935753649" duration="17118000" />
       <workItem from="1529543779883" duration="10000" />
-      <workItem from="1529544024629" duration="564000" />
+      <workItem from="1529544024629" duration="928000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="5478005000" />
+    <option name="totallyTimeSpent" value="5478369000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -2395,13 +2406,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/public/module/CloudSetting.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="913">
-          <caret line="100" column="40" lean-forward="true" selection-start-line="100" selection-start-column="40" selection-end-line="100" selection-end-column="40" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/index.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="483">
@@ -3548,11 +3552,18 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/public/module/CloudSetting.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="890">
+          <caret line="99" column="33" selection-start-line="99" selection-start-column="33" selection-end-line="99" selection-end-column="33" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/README.md">
       <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
         <state split_layout="SPLIT">
-          <first_editor relative-caret-position="782">
-            <caret line="73" column="33" lean-forward="true" selection-start-line="73" selection-start-column="33" selection-end-line="73" selection-end-column="33" />
+          <first_editor relative-caret-position="207">
+            <caret line="9" column="9" lean-forward="true" selection-start-line="9" selection-start-column="9" selection-end-line="9" selection-end-column="9" />
           </first_editor>
           <second_editor />
         </state>
