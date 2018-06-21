@@ -1,0 +1,190 @@
+#CustomFunc9>.windowTitle p{
+    display: none;
+}
+.CloudPassBookMain>.SlimfConfirm button{
+    background: #00aec3;
+    border: 1px solid #00aec3;
+}
+.CloudPassBookMain>.SlimfConfirm input:focus{
+    border-color: #00aec3;
+}
+.CloudPassBookMain{
+    width: 100%;
+    height: 100%;
+}
+.CloudPassBookHead{
+    width: 100%;
+    height: 35px;
+    line-height: 35px;
+    text-indent: 10px;
+    background: #00aec3;
+    color: #fff;
+    padding-left: 50px;
+}
+.CloudPassBookHead img{
+    float: left;
+    width: 39px;
+    position: absolute;
+    top: 10px;
+    z-index: 1;
+    left: 10px;
+}
+.CloudPassBookHead p{
+    position: absolute;
+    top: 11px;
+    color: #fff;
+}
+.CloudPassBookShadow{
+    width: 100%;
+    height: 1px;
+    box-shadow: 0 0 5px #888;
+    position: absolute;
+    top: 61px;
+    display: none;
+}
+.CloudPassBookContainer {
+    width: 100%;
+    height: calc(100% - 35px);
+    background: #f1f1f1;
+    overflow: auto;
+    padding-bottom: 35px;
+}
+.CloudPassBookCHead{
+    width: 100%;
+    height: 30px;
+    line-height: 30px;
+    color: #4f4f4f;
+}
+.CloudPassBookCHead *,.CloudPBList *{
+    float: left;
+    text-indent: 10px;
+}
+.CloudPBList{
+    width: 100%;
+    height: 32px;
+    line-height: 32px;
+    margin: 5px 0px;
+    -webkit-transition:all .35s;
+    -moz-transition:all .35s;
+    -o-transition:all .35s;
+}
+.CloudPBList:hover{
+    background: #eee;
+    -webkit-transition:all .35s;
+    -moz-transition:all .35s;
+    -o-transition:all .35s;
+}
+.CloudPBList input{
+    background: none;
+    height: 32px;
+    margin-right: 5px;
+    border-bottom: 2px solid rgba(0,0,0,0);
+}
+.CloudPBList input:focus{
+    border-bottom: 2px solid #00aec3;
+}
+.CloudPassBDesp{
+    width:calc(50% - 105px)
+}
+.CloudPassBName{
+    width: 25%;
+}
+.CloudPassBControl{
+    width: 105px;
+}
+.CloudPassBControl *{
+    float: left;
+}
+.CloudPassBControl button{
+    text-align: center;
+    margin-right: 3px;
+    height: 100%;
+    line-height: 32px;
+    text-indent: 0;
+    width: 32px;
+    background: none;
+}
+.CloudPassBookContent{
+    background: #fff;
+    width: 70%;
+    margin-left: 15%;
+    border: 1px solid #eee;
+    border-top: none;
+    box-shadow: 0 -1px 0 #e5e5e5, 0 0 2px rgba(0,0,0,.12), 0 2px 4px rgba(0,0,0,.24);
+}
+.CloudPassBookCMain{
+    width: 100%;
+}
+.CloudPassBookBtnArea{
+    position: absolute;
+    right: 20px;
+    bottom: 20px;
+    text-align: center;
+}
+.CloudPassBookMenu{
+    width: 45px;
+    height: 45px;
+    border-radius: 100%;
+    -webkit-border-radius: 100%;
+    -moz-border-radius: 100%;
+    background: #00aec3;
+    color: #fff;
+}
+.CloudPassBookMenu:active,.CloudPassBookActive{
+    width: 40px;
+    height: 40px;
+    transform: rotate(90deg);
+    -ms-transform: rotate(9deg);
+    -moz-transform: rotate(90deg);
+    -webkit-transform: rotate(90deg);
+    background: #E83C3C;
+}
+.CloudPassBookBtnContainer{
+    width: 45px;
+    height: 120px;
+    display: none;
+}
+.CloudPassBookBtnContainer button{
+    width: 45px;
+    height: 45px;
+    margin: 5px 0px;
+    border-radius: 100%;
+    -webkit-border-radius: 100%;
+    -moz-border-radius: 100%;
+    background: #00aec3;
+    color: #fff;
+    -webkit-animation-duration:.3s;animation-duration:.3s;-webkit-animation-fill-mode:both;animation-fill-mode:both;
+    animation-name:slideInUp
+}
+.PassBookNewList{
+    width: 100%;
+    height: 40px;
+}
+.PassBookNewList *{
+    float: left;
+}
+.PassBookNewList label{
+    width: 40px;
+    height: 100%;
+    line-height: 40px;
+}
+.PassBookNewList input{
+    width: calc(100% - 45px);
+    border: none;
+    border-radius: 0;
+    -webkit-border-radius: 0;
+    -moz-border-radius: 0;
+    border-bottom: 1px solid rgba(0,0,0,0);
+}
+.PassBookNewList input:focus{
+    border: none;
+    border-bottom: 1px solid #00aec3;
+}
+.CloudPassBookLoading{
+    width: 100%;
+    height: 40px;
+    line-height: 40px;
+    text-align: center;
+    color: #00aec3;
+    font-size: 16px;
+}

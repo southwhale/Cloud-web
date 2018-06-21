@@ -1,0 +1,32 @@
+<div class="GalleryMain">
+    <ul class="GalleryHead">
+        <img draggable="false" src="./public/img/bar/themes1/gallery.png">
+        <li><p> 时刻</p><div class="GalleryHeadLine" style="width: 100%"></div></li>
+        <li><p> 相册</p><div class="GalleryHeadLine"></div></li>
+    </ul>
+    <div class="GalleryContainer"></div>
+    <div class="GalleryContainer"></div>
+    <button class="GalleryNew sf-icon-plus animated slideInUp"></button>
+    <div class="GalleryAlbumShow">
+        <div class="GalleryAlbumShowHead">
+            <span><i class="sf-icon-angle-left"></i>返回</span><p></p>
+        </div>
+        <div class="GalleryAlbumShowContent TimePhotoContainer"></div>
+    </div>
+    <!--右键菜单-->
+    <ul class="SlimfMouseMenu" id="GalleryMouseMenuTime">
+        <li onclick="CloudGallery.MouseMenuFunc.Show()">查看</li>
+        <li onclick="CloudGallery.MouseMenuFunc.Download()">下载</li>
+        <li onclick="CloudGallery.MouseMenuFunc.MoveTo()">移动到</li>
+        <li onclick="CloudGallery.MouseMenuFunc.Delete()">删除</li>
+        <li onclick="CloudGallery.MouseMenuFunc.Info()">属性</li>
+    </ul>
+    <ul class="SlimfMouseMenu" id="GalleryMouseMenuAlbum">
+        <li onclick="CloudGallery.MouseAlbumFunc.Show()">打开</li>
+        <li onclick="CloudGallery.MouseAlbumFunc.Upload()">上传到此相册</li>
+        <li onclick="CloudGallery.MouseAlbumFunc.Rename()">重命名</li>
+        <li onclick="CloudGallery.MouseAlbumFunc.Delete()">删除</li>
+        <li onclick="CloudGallery.MouseAlbumFunc.Info()">属性</li>
+    </ul>
+</div>
+<script type="text/javascript" src="public/js/CloudGallery.js"></script>

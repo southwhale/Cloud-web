@@ -1,0 +1,212 @@
+#CustomFunc3 >.windowTitle{
+	position: relative;
+	z-index: 1;
+}
+#CustomFunc3 >.windowTitle p{display: none}
+#CustomFunc3>.SlimfWindowContainer{
+	background: #3488fc;
+}
+#CustomFunc3>.SlimfWindowContainer>.SlimfWindowLoading{
+	border: 3px solid #fff;
+	border-right-color: #3488fc;
+}
+.GalleryMain ,.GalleryAlbumShow{
+	width: 100%;
+	height: 100%;
+	background: #fff;
+}
+.GalleryAlbumShow{
+	position: absolute;
+	top:0;
+	background: #fff;
+	display: none;
+}
+.GalleryAlbumShowHead{
+	height: 35px;
+	margin-top: 25px;
+	background: #3488fc;
+}
+.GalleryAlbumShowHead *{
+	float: left;
+	line-height: 35px;
+	margin-top: -10px;
+	color: #fff;
+}
+.GalleryAlbumShowHead span{
+	font-size: 14px;
+	padding-left: 10px;
+	cursor: pointer;
+}
+.GalleryAlbumShowHead span>i{
+	font-size: 20px;
+	margin-right: 5px;
+	margin-top: -1px;
+}
+.GalleryAlbumShowHead p{
+	padding-left: 20px;
+	font-weight:600;
+}
+.GalleryAlbumShowContent{
+	width: 100%;
+	height: calc(100% - 64px);
+	overflow-y: auto;
+	padding-top: 10px!important;
+}
+.GalleryAlbumShowContent button{
+	display: block!important;
+}
+.GalleryHead {
+	height: 35px;
+	width: 100%;
+	background: #3488fc;
+	padding-left: 50px;
+}
+.GalleryHead img{
+	float: left;
+	width: 39px;
+	position: absolute;
+	top: 10px;
+	z-index: 1;
+	left: 10px;
+}
+.GalleryHead li {
+	float: left;
+	margin-left: 15px;
+	height: 100%;
+	cursor: pointer;
+	position: relative;
+	top:-10px;
+	color: #fff;
+}
+.GalleryHead li p {
+	padding: 0 15px;
+	text-align: center;
+	font-size: 14px;
+	line-height: 32px
+}
+.GalleryHead li>.fa {
+	display: block
+}
+.GalleryHeadLine {
+	width: 0;
+	height: 3px;
+	background: #fff;
+}
+.GalleryHead,.GalleryHead li:hover,.GalleryHeadLine {
+	-webkit-transition: all .35s;
+	-moz-transition: all .35s;
+	-o-transition: all .35s
+}
+.GalleryHead li:hover .GalleryHeadLine {
+	width: 100%!important
+}
+.GalleryContainer {
+	width: 100%;
+	height: calc(100% - 35px);
+	overflow-y: auto;
+}
+.TimePhotoTitle{
+	width: 100%;
+	height: 45px;
+	line-height: 45px;
+	padding: 0 15px;
+	color: #808080;
+}
+.TimePhotoContainer{
+	width: 100%;
+	padding: 0px 10px;
+}
+.TimePhoto,.GalleryAlbum{
+	float: left;
+	width: 180px;
+	height: 170px;
+	margin: 0px 5px 5px;
+	background-repeat: no-repeat!important;
+	background-size: contain!important;
+	background-position: center!important;
+	cursor: pointer;
+}
+.TimePhoto:hover{
+	opacity: .7;
+}
+.Galleryago{
+	float: right;
+	margin-left: 10px;
+	color: #3488fc;
+}
+.GalleryNoTips{
+	width: 100%;
+	text-align: center;
+	padding-top: calc(25% - 66px);
+}
+.GalleryNoTips img{
+	width: 45px;
+}
+.GalleryNoTips p{
+	font-size: 16px;
+	color: #ccc;
+}
+.GalleryAlbum{
+	margin: 15px;
+	position: relative;
+	height: 210px;
+}
+.GalleryAlbumPoster{
+	background-repeat: no-repeat!important;
+	background-size: cover!important;
+	width: 180px;
+	height: 170px;
+	position: relative;
+}
+.GalleryAlbumM{
+	position: absolute;
+	top: 8px;
+	bottom: -5px;
+	right: 3%;
+	width: 94%;
+	height: 167px;
+	background: #818181;
+	opacity: 0.5;
+}
+.GalleryAlbumB{
+	position: absolute;
+	top: 13px;
+	bottom: -10px;
+	width: 90%;
+	height: 167px;
+	right: 5%;
+	background: #cdcdcd;
+	opacity: 0.5;
+}
+.GalleryAlbum p{
+	text-align: center;
+	margin-top: 13px;
+	text-overflow: ellipsis;
+	white-space: nowrap;
+}
+.GalleryNew,.GalleryAlbumShowContent button{
+	position: absolute;
+	right: 20px;
+	bottom: 20px;
+	width: 45px;
+	height: 45px;
+	border-radius: 100%;
+	-webkit-border-radius: 100%;
+	-moz-border-radius: 100%;
+	background: #3488fc;
+	color: #fff;
+	display: none;
+}
+.GallertInfoLineContainer{
+	width: 100%;
+	height:100%;
+	padding: 5px;
+	font-size: 13px;
+	color: #313131;
+}
+.GallertInfoLine{
+	width: 100%;
+	height: 1px;
+	background: #f2f2f2;
+	margin: 2px;
+}

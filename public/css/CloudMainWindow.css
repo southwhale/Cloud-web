@@ -1,0 +1,208 @@
+/*个人信息设置窗口 */
+.CloudUserMain{
+    width: 100%;
+    height: 100%;
+}
+.CloudUserLeft{
+    float: left;
+    width: 50%;
+    height: 100%;
+    background: url("../img/user/bg.png");
+    background-position: -79px -46px;
+    background-color: #4996ed;
+}
+#CloudUserQrCode{
+    position: absolute;
+    left: 290px;
+    top: 40px;
+    font-size: 35px;
+    background: none;
+    color: #f3f3f3;
+    cursor: pointer;
+    z-index: 1;
+}
+.CloudUserLeftUp{
+    width: 100%;
+    height: calc(100% - 150px);
+    opacity: .1;
+}
+.CloudUserLeftDown{
+    width: 100%;
+    height: 150px;
+    background: #2682fc;
+}
+.CloudUserRight {
+    float: left;
+    width: 50%;
+    height: 100%;
+    background: #fff;
+    padding: 20px;
+}
+.CloudUserLeftDown img{
+    float: left;
+    width: 100px;
+    height: 100px;
+    border-radius: 100px;
+	-webkit-border-radius: 100px;
+    -moz-border-radius: 100px;
+    margin-top: 25px;
+    margin-left: 15px;
+}
+.CloudUserLeftDown img:hover{
+    opacity: .5;
+    cursor: pointer;
+}
+.CloudUserInfoS{
+    float: right;
+    width: calc(100% - 125px);
+    height: 100%;
+    color: #fff;
+}
+.CloudUserInfoS .CloudUserName{
+    margin-top: 30px;
+    font-size: 22px;
+}
+.CloudUserAge{
+    margin-top: 5px;
+}
+.CloudUserTitle{
+    width: 100%;
+    font-size: 18px;
+    border-bottom: 1px solid #d0d0d0;
+    color: #2f2f2f;
+}
+.CloudUserLine{
+    width: 100%;
+    height: 45px;
+    line-height: 45px;
+}
+.CloudUserLine>.SlimfSelect{
+    float: inherit;
+}
+.CloudUserRight input,.CloudUserRight textarea,.CloudUserSex {
+    width: calc(100% - 50px);
+    height: 35px;
+    display: inline-flex;
+    padding-left: 5px;
+    border: 1px solid #fff;
+    border-radius: 3px;
+	-webkit-border-radius: 3px;
+    -moz-border-radius: 3px;
+    margin: 0;
+}
+.CloudUserRight input:focus,.CloudUserRight textarea:focus,.CloudUserSex:focus{
+    border: 1px solid #2682fc;
+}
+.CloudUserLine label{
+    float: left;
+    width: 42px;
+    height: 100%;
+}
+.CloudUserLine textarea{
+    padding: 5px;
+    height: 60px;
+    overflow: auto;
+}
+.CloudUserLine>#email{
+    font-size: 13px;
+    text-indent: 5px;
+}
+.CloudUserRight span{
+    position: relative;
+    top: -115px;
+    left: 0;
+}
+.CloudUserRight button{
+    padding: 8px 15px;
+    border-radius: 3px;
+	-webkit-border-radius:3px;
+    -moz-border-radius:3px;
+    background: #2682fc;
+    color: #fff;
+    float: right;
+    margin-top: 5px;
+    margin-right: 8px;
+}
+.CloudUserUpload{
+    width: 100px;
+    height: 100px;
+    border-radius: 100px;
+	-webkit-border-radius: 100px;
+    -moz-border-radius:100px;
+    position: absolute;
+    left: 15px;
+    bottom: 24px;
+}
+.CloudUserUpload input{
+    position: absolute;
+    top: -50px;
+    left: -11px;
+}
+/*意见反馈窗口*/
+#CustomFunc11>.windowTitle p{
+    display: none;
+}
+.CloudCouple{
+    width: 100%;
+    height: 100%;
+    background: #fff;
+}
+.CloudCoupleHead{
+    width: 100%;
+    height: 35px;
+    background: #fff;
+    color: #383838;
+    text-indent: 10px;
+    padding-left: 50px;
+    border-bottom: 2px solid #1e88e5;
+}
+.CloudCoupleHead img{
+    float: left;
+    width: 92px;
+    position: absolute;
+    top: 10px;
+    z-index: 1;
+    left: 10px;
+}
+.CloudCoupleHead p {
+    position: absolute;
+    top: 19px;
+    float: left;
+}
+.CloudCoupleLine {
+    margin-top: 10px;
+    width: 100%;
+    height: 25px;
+}
+.CloudCouple form {
+    padding-right: 20px;
+    padding-left: 20px;
+}
+.CloudCouple input {
+    width: 100%;
+    height: 35px;
+    border: 1px solid #B1B1B1;
+    text-indent: 2px;
+}
+.CloudCouple form>input:focus,.CloudCouple textarea:focus {
+    border: 1px solid #2196F3;
+}
+.CloudCouple textarea {
+    overflow: auto;
+    padding: 5px;
+    width: 100%;
+    height: 100px;
+    border: 1px solid #B1B1B1;
+    resize: none;
+}
+.CloudCouple form>button {
+    float: right;
+    margin-top: 5px;
+    width: 80px;
+    height: 35px;
+    border-radius: 3px;
+	-webkit-border-radius: 3px;
+    -moz-border-radius:3px;
+    background: #2196F3;
+    color: #FFf;
+}

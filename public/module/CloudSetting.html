@@ -1,0 +1,109 @@
+<div class="CloudSettingMain">
+    <div class="CloudSettingHead">
+        <div>
+         <i class="sf-icon-cog sf-spin"> </i><span>设置</span>
+        </div>
+    </div>
+    <div class="CloudSettingBody">
+        <ul class="CloudSettingList">
+            <li ripple class="sf-icon-info-circle" style="background: #efefef">&nbsp&nbsp账号信息</li>
+            <li ripple class="sf-icon-user"> &nbsp&nbsp账号管理</li>
+            <li ripple class="sf-icon-pencil">&nbsp&nbsp个性化</li>
+            <li ripple class="sf-icon-copyright"> &nbsp&nbsp关于</li>
+        </ul>
+        <div class="CloudSettingBodyM">
+            <div class="CloudSettingBodyH">&nbsp&nbsp账号信息</div>
+            <div class="CloudSettingCMain" style="display: block">
+                <div class="CloudSettingUser">
+                    <img draggable="false" src="">
+                    <span></span>
+                    <p></p>
+                    <p></p>
+                    <p></p>
+                    <p></p>
+                    <p></p>
+                    <p></p>
+                </div>
+            </div>
+            <div class="CloudSettingCMain">
+                <div class="CloudSettingSafe">
+                    <div>账号当前状态</div>
+                    <p></p>
+                    <div>更改账户密保</div>
+                    <p></p>
+                    <p></p>
+                    <div>修改密码</div>
+                    <p>旧密码:<input type="text" placeholder="在此输入密码" value="*****" onfocus="if (value ==='*****'){value =''}" onblur="if (value ===''){value='*****'}"></p>
+                    <p>新密码:<input type="text" placeholder="在此输入新密码" value="*****" onfocus="if (value ==='*****'){value =''}" onblur="if (value ===''){value='*****'}"></p>
+                    <p><button class="ClousSettingBtn" onclick="CloudSetting.ChangeSafe(3,this)">修改</button></p>
+                    <div>注销用户</div>
+                    <p>注销将不可逆的删除当前账号及所有相关数据</p>
+                    <p><button class="ClousSettingBtn">开始注销</button></p>
+                </div>
+            </div>
+            <div class="CloudSettingCMain">
+                <div class="CloudSettingCustom">
+                    <div>设置背景</div>
+                    <p>默认背景</p>
+                    <ul class="CloudSettingNormalBg">
+                        <li data="upload/user_bg/bg1.jpg"><img draggable="false" src="./upload/user_bg/bg1.jpg"></li>
+                        <li data="upload/user_bg/bg2.jpg"><img draggable="false" src="./upload/user_bg/bg2.jpg"></li>
+                        <li data="upload/user_bg/bg3.jpg"><img draggable="false" src="./upload/user_bg/bg3.jpg"></li>
+                        <li data="upload/user_bg/bg4.jpg"><img draggable="false" src="./upload/user_bg/bg4.jpg"></li>
+                    </ul>
+                    <p>自定义背景</p>
+                    <ul>
+                        <li id="ClousSettingUpload">
+                            <form id="CloudSettingBgForm" style="display: none">
+                                <input type="file" id="ClousSettingSelectBg" name="userpicture" onchange="CloudSetting.CheckUserBG(this)">
+                            </form>
+                            <img src="./public/img/chat/blank.gif"  class="CloudSettingPreview">
+                            <i class="sf-icon-cloud-upload"> &nbsp本地选择</i>
+                        </li>
+                    </ul>
+                    <p class="CloudSBtnArea"><button onclick="CloudSetting.UpdateBg(1)">确认</button><button onclick="CloudSetting.UpdateBg()" style="background: #e64444!important">取消</button></p>
+                    <p></p>
+                    <div>设置主题</div>
+                    <p>默认主题</p>
+                    <ul id="CloudSettingThemes">
+                        <li data="themes1">
+                        </li>
+                        <li data="themes2">
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="CloudSettingCMain">
+                <div class="CloudSettingAbout">
+                    <img src="./public/img/logo/log2.png" draggable="false" />
+                    <p>0.0.0</p>
+                    <p style="height: 10px;"></p>
+                    <div>框架</div>
+                    <p></p>
+                    <div>编辑器</div>
+                    <p></p>
+                    <div>开发维护</div>
+                    <p>ZJINH</p>
+                    <p>YSQ</p>
+                    <div>测试人员</div>
+                    <p>LILILILILILILI</p>
+                    <p>WCP</p>
+                    <p>LZW</p>
+                    <div>联系我们</div>
+                    <p><i class="sf-icon-qq" style="color: #1d8ad8"></i>&nbsp2665229856</p>
+                    <p><i class="sf-icon-envelope" style="color:#4CAF50"></i>&nbsp2665229856@qq.com</p>
+                    <p><i class="sf-icon-envelope" style="color:#4CAF50"></i>&nbspcloud_web@126.com</p>
+                    <p><i class="sf-icon-wechat" style="color:#1eaf38"></i>&nbsp:)</p>
+                    <p><i class="sf-icon-weibo" style="color:#e83c3c"></i>&nbsp:)</p>
+                    <p><i class="sf-icon-git" style="color:#4c4c4c"></i>&nbsphttps://github.com/zjinh</p>
+                    <div>最近更新时间</div>
+                    <p>2018-06-15</p>
+                    <div>Copyright</div>
+                    <p>Copyright ©2016-2018 ZJINH All rights reserved.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <p class="CloudSettingTips">*愿每个人都被时光温柔以待</p>
+</div>
+<script src="public/js/CloudSetting.js"></script>

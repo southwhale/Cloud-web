@@ -1,0 +1,44 @@
+<div class="CloudWeather">
+    <div class="CloudWeatherLoading">
+        <div class="line-scale-pulse-out-rapid">
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+        </div>
+    </div>
+    <div class="CloudWeatherHead">
+        <img draggable="false" src="./public/img/bar/themes1/weather.png">
+        <div>
+            <p class="CWeatherCity"></p>
+            <button tooltip="更换城市">[更换]</button>
+        </div>
+    </div>
+    <div class="CloudWeatherMain">
+        <div class="CWeatherToday">
+            <div class="CWeacherCenter">
+                <img id="CWeatherTImg" draggable="false" src="./public/img/weather/day/qing.png">
+            </div>
+            <p id="CWeatherTInfo">
+            </p>
+            <ul id="CWeatherTtemperature">
+                <li></li>
+                <li></li>
+                <li></li>
+            </ul>
+            <div class="CWeacherCenter">
+                <canvas width="250" height="260" id="CWeatherPM">浏览器不支持canvas</canvas>
+            </div>
+        </div>
+        <div class="CWeatherLast">
+            <ul class="CWeatherList">
+            </ul>
+            <canvas id="CWeatherTread" width="550" height="233"></canvas>
+            <div class="CWeatherNumber">
+
+            </div>
+        </div>
+    </div>
+</div>
+<script src="public/js/CloudWeather.js"></script>

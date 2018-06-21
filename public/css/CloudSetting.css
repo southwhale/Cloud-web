@@ -1,0 +1,213 @@
+#CustomFunc4 >.windowTitle p{display: none}
+.CloudSettingMain>.SlimfConfirm button{
+	background: #00aec3;
+	border: 1px solid #00aec3;
+}
+.CloudSettingMain>.SlimfConfirm input:focus{
+	border-color: #00aec3;
+}
+.CloudSettingMain{
+	width: 100%;
+	height: 100%;
+}
+.CloudSettingHead{
+	width: 100%;
+	height: 35px;
+	background: #00acc2;
+	color: #fff;
+}
+.CloudSettingHead i{
+	width: 45px;
+	text-align: center;
+	font-size: 30px;
+	float: left;
+}
+.CloudSettingHead span{
+	float: left;
+	margin-top: 4px;
+	font-size: 14px;
+}
+.CloudSettingHead div{
+	position: absolute;
+	top:17px;
+}
+.CloudSettingBody{
+	width: 100%;
+	height: calc(100% - 35px);
+	background: #fff;
+}
+.CloudSettingList{
+	float: left;
+	width: 220px;
+	height: 100%;
+	overflow-y: auto;
+	border-right: 1px solid #eeeeee;
+}
+.CloudSettingList li{
+	width: 100%;
+	height: 40px;
+	line-height: 40px;
+	font-size: 15px;
+	text-indent: 10px;
+	color: #424e67;
+}
+.CloudSettingList li:hover{
+	background: #efefef;
+}
+.CloudSettingBodyM{
+	float: left;
+	width: calc(100% - 220px);
+	height: 100%;
+}
+.CloudSettingBodyH{
+	width: 100%;
+	height: 40px;
+	line-height: 40px;
+	font-size: 16px;
+}
+.CloudSettingCMain{
+	width: 100%;
+	padding: 10px;
+	display: none;
+	height: calc(100% - 40px);
+	overflow-y: auto;
+}
+.CloudSettingUser,.CloudSettingSafe,.CloudSettingCustom,.CloudSettingAbout{
+	padding-left: 20px;
+}
+.CloudSettingUser img{
+	float: left;
+	width: 150px;
+	height: 150px;
+	border-radius: 100%;
+	-webkit-border-radius: 100%;
+	-moz-border-radius: 100%;
+	margin-bottom: 30px;
+}
+.CloudSettingUser span{
+	float: left;
+	font-size: 30px;
+	color:#6a6a6a;
+	text-indent: 15px;
+	line-height: 150px;
+}
+.CloudSettingUser p,.CloudSettingSafe p,.CloudSettingCustom p,.CloudSettingAbout p{
+	width: 100%;
+	font-size: 14px;
+	height: 35px;
+	line-height: 35px;
+}
+.CloudSettingSafe div,.CloudSettingCustom div,.CloudSettingAbout div{
+	font-size: 14.5px;
+	float: left;
+	border-bottom: 2px solid #01abc3;
+	color: #00acc2;
+	padding-right: 10px;
+	padding: 10px 15px 5px 0px;
+	text-align: left;
+}
+.CloudSettingSafe p>span{
+	margin-left: 10px;
+	background: #01abc3;
+	color: #fff;
+	padding: 2px 10px;
+	border-radius: 3px;
+	-webkit-border-radius: 3px;
+	-moz-border-radius: 3px;
+	font-size: 14px;
+}
+.CloudSettingSafe input{
+	width: 400px;
+	margin-left: 5px;
+	height: 40px;
+	border-bottom: 1px solid rgba(0,0,0,0);
+}
+.CloudSettingSafe input:focus{
+	border-bottom: 1px solid #01abc3;
+}
+.ClousSettingBtn ,.CloudSettingCustom button{
+	background: #01abc3!important;
+	color: #fff!important;
+	padding: 3px 10px!important;
+	height:auto!important;
+	border-radius: 3px;
+	-webkit-border-radius: 3px;
+	-moz-border-radius: 3px;
+	margin-right: 10px;
+}
+.CloudSettingSafe button{
+	color: #01abc3;
+	background: none;
+	height: 100%;
+	padding: 10px;
+}
+.CloudSettingCustom ul{
+	width: 100%;
+	overflow-x: auto;
+	margin-left: -5px;
+}
+.CloudSettingCustom ul>li{
+	float: left;
+	width: 227px;
+	margin: 5px;
+	padding: 2px;
+	height: 132px;
+	border: 2px solid rgba(0,0,0,0);
+}
+.CloudSettingCustom ul>li:hover{
+	border: 2px solid #01abc3;
+	cursor: pointer;
+}
+.CloudSettingCustom ul>li>img{
+	width: 100%;
+	height: 100%;
+}
+.CloudSettingCustom ul>li>i{
+	width: 100%;
+	height: 100%;
+	display: block;
+	position: relative;
+	top: -127px;
+	background: #01abc3;
+	text-align: center;
+	line-height: 127px;
+	color: #fff;
+	font-size: 14px;
+}
+#CloudSettingThemes li{
+	position: relative!important;
+}
+#CloudSettingThemes li>img{
+	position: absolute!important;
+	width: 35px!important;
+	height: 35px!important;
+}
+.CloudSettingPreview{
+	position: relative;
+	z-index: 1;
+}
+.CloudSBtnArea{
+	display: none;
+}
+.CloudSettingAbout img{
+	float: left;
+}
+.CloudSettingAbout span{
+	color: #505050;
+	font-size: 15px;
+	float: left;
+	margin-top: 21px;
+}
+.CloudSettingAbout p i{
+	float: left;
+	line-height: 42px;
+	height: 42px;
+}
+.CloudSettingTips{
+	position: absolute;
+	right: 0;
+	bottom: 0;
+	font-size: 12px;
+	padding: 5px;
+	color: #e83c3c;
+}

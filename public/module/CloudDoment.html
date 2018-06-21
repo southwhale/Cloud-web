@@ -1,0 +1,37 @@
+<div class="CloudDocumentMain">
+    <ul class="CloudDocumentHead">
+        <img draggable="false" src="./public/img/bar/themes1/doment.png">
+        <li><p> 文档</p><div class="CloudDocumentFuncLine" style="width:100%;"></div></li>
+    </ul>
+    <div class="CloudDocumentMainContainer">
+        <ul class="CloudDocumentLeftNav">
+            <li ripple class="CloudDocumentLeftNavActive"><span class="sf-icon-clock"></span>最近文档</li>
+            <li ripple><span class="sf-icon-file-alt"></span>我的文档</li>
+            <li ripple><span class="sf-icon-hdd"></span>网盘文档</li>
+            <li ripple><span class="sf-icon-trash"></span>回收站</li>
+        </ul>
+        <div class="CloudDomentControlMain">
+            <span class="CloudDocumentLoading"></span>
+        </div>
+    </div>
+    <div class="CloudDomentEditorContainer">
+        <div class="CloudDomentEditorHead">
+            <span><i class="sf-icon-angle-left"></i>返回</span>
+            <p></p>
+        </div>
+        <div class="CloudDomentEditor"></div>
+    </div>
+    <button class="sf-icon-plus CloudDomentAdd"></button>
+    <button class="sf-icon-trash CloudDomentAdd" style="display: none"></button>
+    <ul class="SlimfMouseMenu" id="CloudDomentMouseMenu">
+        <li onclick="CloudDoment.MouseFunc.open();">打开</li>
+        <li onclick="CloudDoment.MouseFunc.Rename();">重命名</li>
+        <li onclick="CloudDoment.MouseFunc.Trash()">移至回收站</li>
+    </ul>
+    <ul class="SlimfMouseMenu" id="CloudDomentTrashMenu">
+        <li onclick="CloudDoment.MouseFunc.open();">打开</li>
+        <li onclick="CloudDoment.MouseFunc.Delete();">彻底删除</li>
+        <li onclick="CloudDoment.MouseFunc.Restore()">还原</li>
+    </ul>
+</div>
+<script src="public/js/CloudDoment.js"></script>

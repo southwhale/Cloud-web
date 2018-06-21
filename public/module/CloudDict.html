@@ -1,0 +1,59 @@
+<div class="CloudDictMain">
+    <div class="CloudDictLeft">
+        <div class="CloudDictLogo">
+            <img draggable="false" src="./public/img/bar/themes1/dict.png">
+            <p>在线词典</p>
+        </div>
+        <ul class="CloudDictMenu">
+            <li ripple class="CloudDictMenuActive"><span class="sf-icon-book"></span>查词翻译</li>
+            <li ripple><span class="sf-icon-language"></span>文本翻译</li>
+        </ul>
+    </div>
+    <div class="CloudDictrRight">
+        <div class="CloudDictContainer">
+            <div class="CloudDictHead">
+                <p>中英互译</p>
+            </div>
+            <input type="text" class="CloudDictInput" placeholder="请在此查词...">
+            <div class="CloudDictExtend">
+                <div class="CloudDictExtend-func sf-icon-file-alt" tooltip="支持txt,doc文件，文件大小小于5M">&nbsp文档翻译</div>
+                <button>翻译</button>
+            </div>
+            <div class="CloudDictBottom">
+                <p></p><span></span>
+                <div>
+
+                </div>
+            </div>
+            <div class="CloudDictSearchMain">
+                <div class="CloudDictSearchHead">
+                    <div class="CloudDictSearchInput" contenteditable="true">
+                    </div>
+                    <button class="sf-icon-times-circle" tooltip="清空"></button>
+                    <button class="CloudDictSearchButton">翻译</button>
+                </div>
+                <div class="CloudDictSearchContainer"></div>
+                <button class="sf-icon-arrow-to-top CloudDictToTop" tooltip="返回顶部"></button>
+            </div>
+        </div>
+        <div class="CloudDictContainer">
+            <div class="CloudDictHead">
+                <p class="CloudDictSelect">自动检测语言<span class="sf-icon-angle-down"></span></p>
+            </div>
+            <div class="CloudDictInputArea">
+                <textarea placeholder="请在此翻译..." class="CloudDictTextarea"></textarea>
+            </div>
+            <div class="CloudDictInputTitle">翻译结果<button class="CloudDict-TranButton">翻译</button></div>
+            <div class="CloudDictInputArea">
+                <div class="CloudDictTextarea" contenteditable="true"></div>
+            </div>
+            <div class="CloudDict-BtnContainer">
+                <button class="sf-icon-font CloudDict-ControlBtn" tooltip="原文译文对照"></button>
+                <button class="sf-icon-expand CloudDict-ControlBtn" tooltip="铺满"></button>
+            </div>
+        </div>
+    <div class="CloudDirtSelectMain">
+        <p>点击选择翻译类型</p>
+    </div>
+</div>
+<script src="public/js/CloudDict.js"></script>

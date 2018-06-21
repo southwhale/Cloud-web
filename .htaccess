@@ -1,0 +1,17 @@
+Options FollowSymlinks 
+RewriteEngine On
+Options -Indexes
+RewriteRule ^login$ index.html
+RewriteRule ^register$ index.html
+RewriteRule ^forget$ index.html
+RewriteRule ^verify$ index.html
+RewriteRule ^error$ index.html
+RewriteRule ^index$ main.html
+RewriteCond %{REQUEST_FILENAME}.php -f 
+RewriteRule ^(.+)$ /$1.php [L,QSA]
+RewriteCond %{REQUEST_FILENAME}.html -f 
+RewriteRule ^(.+)$ /$1.html [L,QSA]
+RewriteRule ^s/(.*)$ share.php?id=$1
+ErrorDocument 404 /public/error/404
+ErrorDocument 403 /public/error/403
+ErrorDocument 500 /public/error/500

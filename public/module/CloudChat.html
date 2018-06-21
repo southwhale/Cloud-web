@@ -1,0 +1,115 @@
+<div class="CloudChatMain">
+    <div class="CloudChatMHead">
+        <div class="CloudChatUser">
+            <img draggable="false">
+            <span></span>
+            <p></p>
+        </div>
+        <div class="CloudUserMenu">
+            <p id="CloudChatUmenuName"></p>
+            <div class="sf-icon-hdd">&nbsp&nbsp网盘<span></span></div>
+            <div class="sf-icon-flag">&nbsp&nbsp验证消息管理<span></span></div>
+            <div class="sf-icon-user">&nbsp&nbsp好友管理<span></span></div>
+            <div class="sf-icon-calendar">&nbsp&nbsp日程管理<span></span></div>
+            <p></p>
+            <div>退出账号</div>
+        </div>
+        <ul id="CloudChatSwitch">
+            <li tooltip="消息" class="sf-icon-comment"></li>
+            <span id="CloudChatMsgCount"></span>
+            <li tooltip="联系人" class="sf-icon-users" style="opacity:.7"></li>
+            <div class="CloudChatTriangle"></div>
+        </ul>
+    </div>
+    <div id="CloudChatToast"><p></p></div>
+    <div class="CloudChatMContent">
+        <div class="CloudChatContainer" id="CloudChatNormal" style="display:block;">
+            <ul class="CloudChatMessageList">
+            </ul>
+            <div class="CloudChatRight">
+                <div id="CloudChatM">
+                    <div class="CloudChatHead">
+                        <p class="CloudChatName"></p>
+                        <div class="CloudChatFunc"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="CloudChatContainer">
+            <div class="CloudChatLeft">
+                <ul class="CloudChatContratFuncMenu" id="ContartSwitch">
+                    <li style="color:#000;">好友<div class="CloudChatContartFuncLine" style="width:100%;"></div></li>
+                    <li>&nbsp&nbsp群&nbsp&nbsp<div class="CloudChatContartFuncLine"></div></li>
+                    <li>多人聊天<div class="CloudChatContartFuncLine"></div></li>
+                    <div class="CloudChatLine"></div>
+                </ul>
+                <ul class="CloudChatFriendList" style="display: block"></ul>
+                <ul class="CloudChatFriendList"></ul>
+                <ul class="CloudChatFriendList"></ul>
+                <button class="sf-icon-plus CloudChatAddBtn"></button>
+                <div class="CloudChatCMenu animated slideInLeft" id="CloudChatCMenu">
+                    <p onclick="CloudChat.Search()">加好友/群</p>
+                    <p onclick="CloudChat.CreateGroup()">创建群</p>
+                    <p onclick="CloudChat.CreatDiscuss()">发起多人聊天</p>
+                </div>
+            </div>
+            <div class="CloudChatRight">
+                <div class="CloudChatUserInfo" id="CloudChatUserInfo">
+                    <img draggable="false">
+                    <div class="CCUIHead" id="CCUIHead" style="display: none"></div>
+                    <button class="sf-icon-comment-dots"></button>
+                    <div class="CloudChatInfoPanel">
+                        <div>
+                            <p class="CCIPName"></p>
+                            <p></p>
+                            <p></p>
+                            <p></p>
+                            <p></p>
+                            <p></p>
+                            <p></p>
+                        </div>
+                        <div>
+                            <p class="CCIPName"></p>
+                            <p></p>
+                            <p></p>
+                            <p></p>
+                            <p></p>
+                            <ul></ul>
+                        </div>
+                        <div>
+                            <p class="CCIPName"></p>
+                            <p></p>
+                            <ul></ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <ul class="SlimfMouseMenu" id="CloudChatSortMenu">
+        <li onclick="CloudChat.SortMenuFunc.Refuse();">刷新好友列表</li>
+        <li onclick="CloudChat.SortMenuFunc.Add();">添加分组</li>
+        <li onclick="CloudChat.SortMenuFunc.Rename()" id="CCRename">重命名</li>
+        <li onclick="CloudChat.SortMenuFunc.Delete()" id="CCDelete">删除该组</li>
+        <li onclick="CloudChat.SortMenuFunc.Mange()">好友管理器</li>
+    </ul>
+    <ul class="SlimfMouseMenu" id="CloudChatContactMenu">
+        <li onclick="CloudChat.ContactMenuFunc.SetNick();">设定备注</li>
+        <li onclick="CloudChat.ContactMenuFunc.ChangeSort();">修改分组</li>
+        <li onclick="CloudChat.ContactMenuFunc.Delete()">删除好友</li>
+        <li>举报</li>
+    </ul>
+    <ul class="SlimfMouseMenu" id="CloudChatGroupMenu">
+        <li onclick="CloudChat.GroupMenuFunc.SetNick();">设定备注</li>
+        <li onclick="CloudChat.GroupMenuFunc.Exit()">删除</li>
+    </ul>
+    <ul class="SlimfMouseMenu" id="CloudChatDisucssMenu">
+        <li onclick="CloudChat.DiscussMenuFunc.ReTitle();">修改主题</li>
+        <li onclick="CloudChat.DiscussMenuFunc.Exit()">删除</li>
+    </ul>
+    <ul class="SlimfMouseMenu" id="CloudChatMsgListMMenu">
+        <li onclick="CloudChat.MsgLMenuFunc.Close();">关闭会话</li>
+        <li onclick="CloudChat.MsgLMenuFunc.CloseAll()">关闭全部会话</li>
+    </ul>
+</div>
+<script src="public/js/CloudChat.js"></script>

@@ -1,0 +1,420 @@
+#CustomFunc10{
+    background: none;
+}
+#CustomFunc10>.windowTitle p{
+    display: none;
+}
+.CloudDictMain{
+    width: 100%;
+    height: 100%;
+}
+.CloudDictLeft{
+    top: 0;
+    position: absolute;
+    width: 165px;
+    height: 590px;
+    background-position: 50% 50%!important;
+    background-size: cover!important;
+    background-repeat: no-repeat!important;
+    background: url("../img/dict/bg.png");
+}
+.CloudDictrRight{
+    float: right;
+    width: calc(100% - 165px);
+    height: 100%;
+    background: #fff;
+}
+.CloudDictLogo{
+    width: 100%;
+    height: 115px;
+    text-align: center;
+    padding-top: 30px;
+}
+.CloudDictLogo img{
+    background: 40px;
+    height: 40px;
+}
+.CloudDictLogo p{
+    text-shadow: 0px 0px 1px #e4e4e4;
+}
+.CloudDictMenu{
+    width: 100%;
+}
+.CloudDictMenu li{
+    width: 100%;
+    height: 47px;
+    padding: 0 15px;
+    line-height: 47px;
+    margin-bottom: 5px;
+    cursor: pointer;
+}
+.CloudDictMenu li span{
+    float: left;
+    width: 40px;
+    text-align: center;
+    line-height: 47px;
+    height: 100%;
+    font-size: 20px;
+    cursor: pointer;
+}
+.CloudDictMenu li:hover{
+    color: #d10b0b;
+}
+.CloudDictMenuActive{
+    background: #afafaf40;
+    color: #d10b0b;
+}
+.CloudDictHead{
+    width: 100%;
+    height: 40px;
+}
+.CloudDictHead p,.CloudDictSelect{
+    float: left;
+    line-height: 40px;
+    color: #4f4f4f;
+}
+.CloudDictSelect span{
+    float: right;
+    line-height: 40px;
+    margin-left: 5px;
+}
+.CloudDirtSelectMain {
+    position: absolute;
+    background: #fff;
+    width: 240px;
+    top: 65px;
+    left: 175px;
+    box-shadow: 0 -1px 0 #e5e5e5, 0 0 2px rgba(0,0,0,.12), 0 2px 4px rgba(0,0,0,.24);
+    padding: 10px;
+    display: none;
+}
+.CloudDirtSelectMain div{
+    margin: 3px;
+    padding: 3px;
+    float: left;
+    cursor: pointer;
+    width: calc(50% - 6px);
+    height: 30px;
+    line-height: 23px;
+    border-radius: 5px;
+}
+.CloudDictSelectActive,.CloudDirtSelectMain div:hover{
+    background: #f75454!important;
+    color: #fff!important;
+}
+.CloudDirtSelectMain p{
+    color: #a5a5a5;
+    margin: 3px;
+    padding: 3px;
+    font-size: 12px;
+}
+.CloudDictContainer{
+    width: 100%;
+    padding: 10px;
+    height: 100%;
+    padding-top: 0px;
+}
+.CloudDictInput{
+    width: 100%;
+    height: 50px;
+    font-size: 23px;
+}
+.CloudDictExtend{
+    width: 100%;
+    border-bottom: 1px solid #eee;
+    margin-top: 50px;
+}
+.CloudDictExtend-func{
+    height: 40px;
+    line-height: 40px;
+    color: #5e5e5e;
+    font-size: 14.5px;
+}
+.CloudDictExtend-func:hover,.CloudDictSelect:hover,.CloudDictSearchHead .sf-icon-times-circle:hover{
+    color: #000;
+}
+.CloudDictExtend button{
+    float: right;
+    width: 80px!important;
+    height: 35px;
+    color: #fff;
+    background: #F75454!important;
+    border-radius: 3px;
+}
+.CloudDictSearchMain{
+    width: calc(100% - 165px);
+    height: calc(100% - 70px);
+    position: absolute;
+    padding: 10px;
+    top: 70px;
+    left: 165px;
+    background: #fff;
+    display: none;
+}
+.CloudDictSearchHead{
+    width: 100%;
+    min-height: 40px;
+    max-height: 190px;
+    border-bottom: 1px solid #eee;
+    position: relative;
+}
+.CloudDictSearchHead button{
+    background: none;
+    width: 35px;
+    height: 35px;
+    position: absolute;
+    bottom: 5px;
+    right: 0;
+}
+.CloudDictSearchInput{
+    float: left;
+    width: calc(100% - 120px);
+    line-height: 35px;
+    overflow-y: auto;
+    max-height: 190px;
+}
+.CloudDictSearchButton{
+    width: 80px!important;
+    color: #fff;
+    background: #F75454!important;
+    border-radius: 3px;
+}
+.CloudDictSearchHead .sf-icon-times-circle{
+    right: 80px;
+    color: #838383;
+    font-size: 18px;
+}
+.CloudDictBottom{
+    width: 100%;
+    height: 100px;
+    margin-top: 258px;
+    padding: 10px;
+}
+.CloudDictBottom *{
+    float: left;
+}
+.CloudDictBottom p{
+    font-size: 50px;
+}
+.CloudDictBottom span{
+    margin-top: 30px;
+    margin-left: 13px;
+    font-size: 18px;
+}
+.CloudDictBottom div{
+    width: 100px;
+    height: 50px;
+    border-left: 1px solid #eee;
+    margin-left: 10px;
+    margin-top: 10px;
+    padding-left: 10px;
+    line-height: 50px;
+    font-size: 18px;
+}
+.CloudDictSearchMain .CloudDictToTop{
+    background: #F75454;
+    color: #fff;
+    position: absolute;
+    right: 30px;
+    bottom: 40px;
+    width: 35px;
+    height: 35px;
+    text-align: center;
+    border-radius: 5px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    display: none;
+}
+.CloudDict-BtnContainer{
+    height: 30px;
+    float: right;
+}
+.CloudDict-ControlBtn{
+    background: none;
+    color: #f85453;
+    width: 30px;
+    height: 30px;
+}
+/*文本翻译*/
+.CloudDictInputArea{
+    width: 100%;
+    height: 214px;
+    margin: 5px 0px;
+}
+.CloudDictInputArea textarea,.CloudDictInputArea div{
+    border: 2px solid #eee;
+    width: 100%;
+    height: 100%;
+    border-radius: 5px;
+    font-size: 16px;
+    padding: 10px;
+    overflow: auto;
+}
+.CloudDictInputArea div{
+    font-size: 14px;
+}
+.CloudDictInputArea textarea:focus,.CloudDictInputArea div:focus{
+    border: 2px solid #f75454;
+}
+.CloudDictInputTitle{
+    width: 100%;
+    height: 40px;
+    line-height: 40px;
+    color: #f75454;
+    font-size: 16px;
+}
+.CloudDict-TranButton{
+    float: right;
+    background: #f75454;
+    color: #fff;
+    border-radius: 5px;
+    padding: 7px 22px;
+    margin-top: 5px;
+}
+.CloudDict-Tran{
+    width: 100%;
+}
+.CloudDict-TranButton-pos{
+    float: right;
+    background: #f75454;
+    color: #fff;
+    border-radius: 5px;
+    padding: 7px 22px;
+    margin-top: 5px;
+    position: absolute;
+    top: 25px;
+    right: 15px;
+}
+.CloudDict-TranSrc{
+    width: 100%;
+    display: none   ;
+}
+/*结果*/
+.CloudDictWord{
+    width: 100%;
+    font-size: 30px;
+    margin-top: 15px;
+}
+.CloudDictSpeech,.CloudDictSpeech-audio{
+    float: left;
+    height: 25px;
+    line-height: 25px;
+}
+.CloudDictSpeech-audio{
+    color: #F75454;
+    text-align: center;
+    width: 30px;
+    margin-right: 20px;
+}
+.CloudDictSearchContainer{
+    height: calc(100% - 40px);
+    overflow: auto;
+}
+/*词典切换导航*/
+.CloudDictSNav{
+    float: left;
+    width: 100%;
+    height: 40px;
+    line-height: 38px;
+    margin-top: 10px;
+    border-bottom: 2px solid #EEE;
+    overflow: unset;
+}
+.CloudDictSNav li{
+    float: left;
+    border-bottom: 2px solid rgba(0,0,0,0);
+    margin-right: 30px;
+}
+.CloudDictSNav li:hover,.CloudDictSNavActive{
+    border-bottom: 2px solid #F75454!important;
+}
+.CloudDictSNavArea{
+    width: 100%;
+}
+.CloudDictDictContent{
+    width: 100%;
+    line-height: 30px;
+}
+.CloudDictDictContent *{
+    float: left;
+}
+.CloudDictDictContent span{
+    width: 25px;
+    color: #959595;
+}
+.CloudDictDictContent p{
+    float: left;
+    width: calc(100% - 25px);
+}
+.CloudDictDictContent p{
+    -moz-user-select:unset;
+    -webkit-user-select:unset;
+    -ms-user-select:unset;
+    -khtml-user-select:unset;
+    user-select:unset;
+}
+.CloudDictDictContent p b{
+    float: unset;
+}
+.CloudDictDictContent .eng_sent,.CloudDictDictContent .eng_sents{
+    margin-left: 25px;
+    color: #565656;
+}
+.CloudDictDictContent .eng_sent:before{
+    content: '·';
+    margin-right: 5px;
+}
+.CloudDictDictContent .GRAM_Tag{
+    font-size: 14px;
+    width: unset;
+    margin-left: 25px;
+}
+.CloudDictDictContent .GRAM_Padding{
+    padding-left: 25px;
+}
+/*朗文词典*/
+.CloudDictLongmanMain{
+
+}
+.CloudDictLongman-head{
+
+}
+/*柯尼斯头部*/
+.CloudDictRHead-word{
+    color: #F75454;
+    font-size: 20px;
+    line-height: 40px;
+}
+.CloudDictRHead-phonetic{
+    color: #959595;
+    line-height: 40px;
+    margin-left: 20px;
+}
+/*近义词*/
+.CloudDict-similar-Line{
+    margin-left: 25px;
+}
+.CloudDict-similar{
+    margin-left: 5px;
+    color: #3b8cff;
+    cursor: pointer;
+}
+.CloudDict-web-tran{
+    margin-left: 5px;
+}
+/*加载*/
+.CloudDictLoading{
+    width:100%;
+    height: 100%;
+    text-align: center;
+}
+.CloudDictLoading span{
+    width: 100%;
+    height: 50px;
+    font-size: 30px;
+    color: #f74949;
+    margin-top: 25%;
+}
+.CloudDictLoading p{
+    width: 100%;
+}

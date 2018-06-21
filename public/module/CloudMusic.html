@@ -1,0 +1,125 @@
+<div class="CloudMusicMain">
+    <ul class="CloudMusicHead">
+        <img draggable="false" src="./public/img/bar/themes1/music.png">
+        <li><p> 首页</p><div class="MusicFuncLine" style="width:100%;"></div></li>
+        <li><p> 搜索</p><div class="MusicFuncLine"></div></li>
+    </ul>
+    <div class="CloudMusicCenter">
+        <div class="CloudMusicLeft" style="height:100%;">
+            <div class="CloudMusicLeft">
+                <p>我的音乐</p>
+                <ul class="CloudMusicNormalLeft">
+                    <li ripple class="CloudMusicLeftActive">今日推荐</li>
+                    <li ripple>本地音乐</li>
+                    <li ripple>所有音乐</li>
+                </ul>
+                <p>创建的歌单<button onclick="CloudMusic.NewMusicList()" class="sf-icon-plus"></button></p>
+                <ul class="CloudMusicCustomLeft">
+                    <li ripple>我喜欢的音乐</li>
+                </ul>
+            </div>
+            <div class="CloudMusicLeftPlayer">
+                <img draggable="false" src="public/img/music/cover.png">
+                <p style="color: #333333">CloudMusic</p>
+                <p></p>
+            </div>
+        </div>
+        <div class="CloudMusicRight">
+            <div class="CloudMusicNormaList">
+                <div class="CloudMusicNormaListHead">
+                    <div>-1</div>
+                    <p>根据最近所听歌曲自动生成</p>
+                </div>
+                <div class="CloudMusicListHead">
+                    <span class="sf-icon-list-ul"></span>
+                    <span class="CloudMusicLiTitle">歌曲名</span>
+                    <span class="CloudMusicLiSinger">歌手</span>
+                    <span class="CloudMusicLiSinger">专辑</span>
+                    <span class="CloudMusicLiTime">时长</span>
+                    <span style="border: none">操作</span>
+                </div>
+                <ul style="display:block;"></ul>
+                <ul></ul>
+                <ul></ul>
+                <button class="CloudMusicUploadBtn sf-icon-plus" onclick="CloudMusic.UploadMusic()"></button>
+            </div>
+            <div class="CloudMusicCustomList" style="display:none;">
+                <div class="CloudMusicCustomListHead">
+                    <img src="public/img/music/cover.png">
+                    <p>歌单名称</p>
+                    <span>2017-1-1</span>
+                </div>
+                <div class="CloudMusicListHead">
+                    <span class="sf-icon-list-ul"></span>
+                    <span class="CloudMusicLiTitle">歌曲名</span>
+                    <span class="CloudMusicLiSinger">歌手</span>
+                    <span class="CloudMusicLiSinger">专辑</span>
+                    <span class="CloudMusicLiTime">时长</span>
+                    <span style="border: none">操作</span>
+                </div>
+                <ul style="display: none">
+
+                </ul>
+            </div>
+            <div class="CloudMusicSearchContainer">
+                <div class="CloudMusicSearchHead">
+                    <div class="CloudMusicSearchFkey">搜</div>
+                    <input type="text" value="在此输入歌曲、歌手" onfocus="if (value ==='在此输入歌曲、歌手'){value =''}" onblur="if (value ===''){value='在此输入歌曲、歌手'}">
+                    <p></p>
+                </div>
+                <div class="CloudMusicListHead">
+                    <span class="sf-icon-list-ul"></span>
+                    <span class="CloudMusicLiTitle">歌曲名</span>
+                    <span class="CloudMusicLiSinger">歌手</span>
+                    <span class="CloudMusicLiSinger">专辑</span>
+                    <span class="CloudMusicLiTime">时长</span>
+                    <span style="border: none">操作</span>
+                </div>
+                <ul></ul>
+            </div>
+        </div>
+    </div>
+    <div class="CloudMusicBottom">
+        <div class="CloudMusicControl">
+            <span class="sf-icon-step-backward"></span>
+            <div  class="sf-icon-play"></div>
+            <span class="sf-icon-step-forward"></span>
+        </div>
+        <div class="CloudMusicTime" style="text-align: left">00:00</div>
+        <div class="CloudMusicSliderContainer">
+            <div class="CloudMusicSlider"><span></span></div>
+            <div class="CloudMusicTempSlider"></div>
+        </div>
+        <div class="CloudMusicTime">00:00</div>
+        <div class="sf-icon-volume-up"></div>
+        <div class="CloudMusicVolumnContainer"><div class="CloudMusicVolumnSlider" style="width:100%;"></div></div>
+        <div class="CloudMusicPlayMode sf-icon-bars"></div>
+        <audio hidden></audio>
+    </div>
+    <div class="CloudMusicPlayer" style="width: 0px; height: 0px;">
+        <div class="CloudMusicPlayerFliter"></div>
+        <div class="CloudMusicPlayerInfo">
+            <div class="CloudMusicNeedle CloudMusicNeedleLock"></div>
+            <div class="CloudMusicPlayerCoverContainer">
+                <img src="./public/img/music/cover.png" draggable="false">
+            </div>
+            <div class="CloudMusicPlayerRightInfo">
+                <p class="CloudMusicPlayerName"></p>
+                <span class="CloudMusicPlayerSinger"></span>
+                <span class="CloudMusicPlayerAlbum"></span>
+                <div class="CloudMusicPlayerLyr">
+                    <ul id="CloudMusicPlayerLyrList">
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <button class="CloudMusicPlayerClose sf-icon-compress-alt"></button>
+    </div>
+    <div class="CloudMusicToast animated fadeIn" style="display: none;"></div>
+    <ul class="SlimfMouseMenu" id="CloudMusicListMenu">
+        <li onclick="CloudMusic.CustomListRightMenu.Open()">打开</li>
+        <li onclick="CloudMusic.CustomListRightMenu.Rename()">重命名</li>
+        <li onclick="CloudMusic.CustomListRightMenu.Delete()">删除</li>
+    </ul>
+</div>
+<script src="public/js/CloudMusic.js"></script>

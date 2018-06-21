@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html >
+<head>
+<meta charset="UTF-8">
+<title>Cloud</title>
+    <link href="public/css/CloudIndex.css" type="text/css" rel="stylesheet" />
+    <link href="public/css/Slimf.css" type="text/css" rel="stylesheet"/>
+    <link href="public/img/Cloud.ico" rel="shortcut icon"/>
+</head>
+<body oncontextmenu="return(false)">
+    <div class="CloudIndexFliter">
+        <p>Copyright ©2014-2018 ZJINH All rights reserved.</p>
+    </div>
+    <div class="CloudIndexMain animated zoomIn">
+        <div class="CloudIndexLeft">
+            <div class="CloudIndexHead">
+                <h1>欢迎</h1>
+                <p>请登录后继续</p>
+            </div>
+            <div class="CloudIndexForm" style="display: block">
+                <div class="CloudIndex-Input">
+                    <span class="sf-icon-user"></span>
+                    <input id="l-username" type="text" autocomplete='off' spellcheck="false" index>
+                    <label for="l-username">用户名/手机号/邮箱/CloudID</label>
+                </div>
+                <div class="CloudIndex-Input" >
+                    <span class="sf-icon-lock"></span>
+                    <input id="l-userpass" type="password" autocomplete='off' spellcheck="false" index>
+                    <label for="l-userpass">输入您的密码</label>
+                </div>
+                <div class="CloudIndex-LineContainer">
+                    <label for="remberpass">&nbsp记住我</label>
+                    <input type="checkbox" id="remberpass" hidden onclick="CloudIndex.Remember(this)">
+                    <a switch>忘记密码？</a>
+                </div>
+                <div class="CloudIndex-postBut">
+                    <button post>登录</button>
+                </div>
+                <div class="CloudIndex-OtherLogin">
+                    <label>其他登录</label>
+                    <ul>
+                        <li class="sf-icon-wechat" ripple><span>&nbsp&nbsp微信</span></li>
+                        <div></div>
+                        <li class="sf-icon-qq" ripple><span>&nbsp&nbspQQ</span></li>
+                    </ul>
+                </div>
+                <div class="CloudIndex-Tips">
+                    <p>使用邮箱&nbsp<span switch>创建一个新用户</span></p>
+                </div>
+            </div>
+            <div class="CloudIndexForm">
+                <div class="CloudIndex-Input">
+                    <span class="sf-icon-user"></span>
+                    <input id="r-username" type="text" autocomplete='off' spellcheck="false" index>
+                    <label for="r-username">用户名</label>
+                </div>
+                <div class="CloudIndex-Input" >
+                    <span class="sf-icon-envelope"></span>
+                    <input id="r-usermail" type="text" autocomplete='off' spellcheck="false" index>
+                    <label for="r-usermail">输入您的邮箱</label>
+                </div>
+                <div class="CloudIndex-Input" >
+                    <span class="sf-icon-lock"></span>
+                    <input id="r-userpass" type="password" autocomplete='off' spellcheck="false" index>
+                    <label for="r-userpass">设置登录密码</label>
+                </div>
+                <div class="CloudIndex-Input" >
+                    <span class="sf-icon-keyboard"></span>
+                    <input id="r-usercode" type="text" autocomplete='off' spellcheck="false" index>
+                    <label for="r-usercode">验证码</label>
+                    <img title="点击刷新"  draggable="false">
+                </div>
+                <div class="CloudIndex-postBut">
+                    <button post>创建</button>
+                </div>
+                <div class="CloudIndex-Tips">
+                    <p>已经有账号&nbsp<span switch>前往登录</span></p>
+                </div>
+            </div>
+            <div class="CloudIndexForm">
+                <div class="CloudIndex-Input">
+                    <span class="sf-icon-user"></span>
+                    <input id="f-username" type="text" autocomplete='off' spellcheck="false" index>
+                    <label for="f-username">用户名</label>
+                </div>
+                <div class="CloudIndex-Input" >
+                    <span class="sf-icon-envelope"></span>
+                    <input id="f-usermail" type="text" autocomplete='off' spellcheck="false" index>
+                    <label for="f-usermail">您的注册邮箱</label>
+                </div>
+                <div class="CloudIndex-Input" >
+                    <span class="sf-icon-keyboard"></span>
+                    <input id="f-usercode" type="text" autocomplete='off' spellcheck="false" index>
+                    <label for="f-usercode">验证码</label>
+                    <img title="点击刷新"  draggable="false">
+                </div>
+                <div class="CloudIndex-LineContainer">
+                    <p>填写以上信息开始吧</p>
+                </div>
+                <div class="CloudIndex-postBut">
+                    <button post>开始</button>
+                </div>
+                <div class="CloudIndex-Tips">
+                    <p>没有问题了&nbsp<span switch>前往登录</span></p>
+                </div>
+            </div>
+            <div class="CloudIndexForm">
+                <div class="CloudIndex-Input" >
+                    <span class="sf-icon-envelope"></span>
+                    <input id="v-user" type="text" autocomplete='off' spellcheck="false" disabled index>
+                    <label for="v-user">用户名</label>
+                </div>
+                <div class="CloudIndex-Input" >
+                    <span class="sf-icon-lock"></span>
+                    <input id="v-usercode" type="password" autocomplete='off' spellcheck="false" index>
+                    <label for="v-usercode">您的密码</label>
+                </div>
+                <div class="CloudIndex-Input" >
+                    <span class="sf-icon-keyboard"></span>
+                    <input id="v-verifycode" type="text" autocomplete='off' spellcheck="false" index>
+                    <label for="v-verifycode">邮箱激活码</label>
+                </div>
+                <div class="CloudIndex-Tips">
+                    <p style="text-align: left">没有收到邮件&nbsp<span id="resendBtn">重新发送</span></p>
+                </div>
+                <div class="CloudIndex-postBut">
+                    <button post>激活</button>
+                </div>
+                <div class="CloudIndex-Tips">
+                    <p>账号激活了&nbsp<span switch>前往登录</span></p>
+                </div>
+            </div>
+        </div>
+        <div class="CloudIndexRight">
+            <img draggable="false" src="public/img/logo/log.png">
+        </div>
+    </div>
+    <div class="CloudIndexLogining animated zoomIn">
+        <ul>
+            <li class="sf-icon-music"></li>
+            <li class="sf-icon-users"></li>
+            <li>
+                <img draggable="false" src="upload/user_head/normal_head.jpg">
+                <div class="circle"></div>
+            </li>
+            <li class="sf-icon-video"></li>
+            <li class="sf-icon-comments"></li>
+            <p></p>
+        </ul>
+    </div>
+    <script src="public/js/Slimf.js" type="text/javascript"></script>
+    <script src="public/js/CloudClient.js" type="text/javascript"></script>
+    <script src="public/js/CloudIndex.js" type="text/javascript"></script>
+</body>
+</html>

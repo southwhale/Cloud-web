@@ -1,0 +1,77 @@
+<div class="CloudNoteMain">
+    <div class="CloudNoteHead">
+        <img draggable="false" src="./public/img/bar/themes1/note.png">
+        <p>备忘录</p>
+    </div>
+    <div class="CloudNoteContainer">
+        <ul class="CloudNoteLeftNav">
+            <li ripple data="null" class="CloudNoteLeftNavActive"><span class="sf-icon-bookmark"></span>所有类型</li>
+            <li ripple data="BackUp"><span class="sf-icon-book"></span>备忘录</li>
+            <li ripple data="Dealt"><span class="sf-icon-clock"></span>待办</li>
+            <li ripple data="Finish"><span class="sf-icon-calendar-check"></span>已完成</li>
+            <li ripple><span class="sf-icon-calendar"></span>查看日历</li>
+        </ul>
+        <div class="CloudNoteContent">
+            <div class="CloudNoteNoTips sf-icon-clock"></div><p class="CloudNoteLoadingTips">没有备忘录可以显示</p>
+        </div>
+        <div class="CloudNoteContent"></div>
+        <div class="CloudNoteContent"></div>
+        <div class="CloudNoteContent"></div>
+        <div class="CloudNoteContent">
+            <div id="CloudCalendar">
+                <header class="CloudCalendarHeader">
+                    <ul>
+                        <li class="cur">月</li>
+                        <li>年</li>
+                    </ul>
+                </header>
+                <div class="container">
+                    <div id="renderMonth" class="render render-show">
+                        <h2 class="title">2018年3月</h2>
+                        <ul class="week">
+                            <li>周日</li>
+                            <li>周一</li>
+                            <li>周二</li>
+                            <li>周三</li>
+                            <li>周四</li>
+                            <li>周五</li>
+                            <li>周六</li>
+                        </ul>
+                        <ul class="day"></ul>
+                    </div>
+                    <div id="renderFullYear" class="render">
+                        <div class="title">
+                            <h2></h2>
+                            <p>
+                                <span class="lunar-year"><i></i>戊戌狗年</span>
+                                <span class="info"><i></i>农历初一</span>
+                            </p>
+                        </div>
+                        <ul class="month"></ul>
+                    </div>
+                    <div id="CloudCalendarControl">
+                        <input type="button" value="&lt;" class="btn btn-prev">
+                        <input type="button" value="今天" class="today">
+                        <input type="button" value="&gt;" class="btn btn-next">
+                    </div>
+                    <div id="CloudCalendarPopup">
+                        <h3 class="title"></h3>
+                        <i class="arrow arrow-left"></i>
+                        <i class="arrow arrow-right"></i>
+                        <p class="date"></p>
+                        <p class="lunar"></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="CloudNoteBtnArea">
+        <div class="CloudNoteBtnContainer">
+            <button class="sf-icon-book" tooltip="添加备忘录" data="BackUp"></button>
+            <button class="sf-icon-clock" tooltip="添加待办事件" data="Dealt" style="background: orange"></button>
+        </div>
+        <button class="sf-icon-plus CloudNoteAddBtn"></button>
+    </div>
+</div>
+<script src="public/js/CloudNote.js"></script>
+<script src="public/js/CloudNoteCalendar.js"></script>

@@ -1,0 +1,120 @@
+.CloudTestPanel,.CloudTestConsole,.CloudTestCode,.CloudTestModelContainer{
+    float: left;
+    padding: 10px;
+    margin: 20px;
+    background: #fff;
+    color: #333;
+    border-radius: 3px;
+    margin-right: 0;
+    margin-bottom: 0;
+}
+.CloudTestPanel:before,.CloudTestConsole:before,.CloudTestCode:before,.CloudTestModelContainer:before{
+    float: left;
+    color: #646464;
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+.CloudTestPanel:before{
+    content: 'Beta';
+}
+.CloudTestPanel button{
+    width: 100%;
+    height: 30px;
+    background: #2682fc;
+    color: #fff;
+    margin: 5px 0px;
+}
+.CloudTestPanel p{
+    width: 100%;
+    word-break: break-all;
+}
+.CloudTestPanel{
+    width: 155px;
+}
+.CloudTestRight{
+    float: right;
+    height: 100%;
+}
+.CloudTestCode{
+    width: 400px;
+    margin-right: 10px;
+    float: unset;
+}
+.CloudTestCode:before{
+    content:'Sources';
+}
+.CloudTestCode textarea{
+    width: 100%;
+    height: calc(100% - 120px);
+    background: #eeeeee;
+    border: 1px solid #e6e3e3;
+    padding: 5px;
+}
+.CloudTestCode textarea:focus{
+    border-color: #38f;
+}
+.CloudTestCode button{
+    float: right;
+    width: 45px;
+    height: 30px;
+    background: #75a030;
+    color: #fff;
+    margin-top: 5px;
+}
+.CloudTestConsole{
+    float: unset;
+    width: 400px;
+    max-height: calc(100% - 250px);
+    margin-right: 20px;
+    overflow: auto;
+}
+.CloudTestConsole:before{
+    content: 'console';
+}
+.CloudTestConsole div{
+    float: left;
+    width: 100%;
+    height: 100%;
+}
+.CloudTestConsole button{
+    float: right;
+    width: 45px;
+    height: 30px;
+    background: #1e88e5;
+    color: #fff;
+}
+.CloudTestConsole div p{
+    color:#e21515;
+    margin-top:5px;
+}
+.CloudTestModelContainer{
+    width: 200px;
+}
+.CloudTestModelContainer:before{
+    content:'Module' ;
+}
+.CloudTestModel{
+    width: 100%;
+    height: 50px;
+    line-height: 50px;
+}
+.CloudTestModel *{
+    float: left;
+}
+.CloudTestModel img{
+    width: 40px;
+    height: 40px;
+    margin-top: 5px;
+}
+.CloudTestModel p{
+    margin-left: 5px;
+}
+#CloudVersion{
+    display: block;
+    position: absolute;
+    right: 40px;
+    bottom: 40px;
+    color: #fff;
+    font-size: 40px;
+    -webkit-box-reflect: below 5px -webkit-gradient(linear, center top, center bottom, from(transparent),color-stop(0.2, transparent), to(white));
+}

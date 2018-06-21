@@ -1,0 +1,735 @@
+#CustomFunc7>.windowTitle p{
+    display: none;
+}
+.CloudNoteMain>.SlimfConfirm button{
+    background: #43495A;
+    border: 1px solid #43495A;
+}
+.CloudNoteMain{
+    width: 100%;
+    height: 100%;
+    background: #fff;
+}
+.CloudNoteHead{
+    width: 100%;
+    height: 35px;
+    line-height: 35px;
+    text-indent: 10px;
+    background: #43495A;
+    font-size: 14px;
+    padding-left: 50px;
+}
+.CloudNoteHead img{
+    float: left;
+    width: 39px;
+    position: absolute;
+    top: 10px;
+    z-index: 1;
+    left: 10px;
+}
+.CloudNoteHead p{
+    position: absolute;
+    top: 11px;
+    color: #fff;
+}
+.CloudNoteContainer{
+    width: 100%;
+    height: calc(100% - 35px);
+}
+.CloudNoteLeftNav{
+    float: left;
+    width: 200px;
+    height: 100%;
+    border-right:2px solid #43495a;
+}
+.CloudNoteLeftNav li{
+    width: 100%;
+    height: 40px;
+    line-height: 40px;
+    color: #4f4f4f;
+}
+.CloudNoteLeftNav li:hover,.CloudNoteLeftNavActive{
+    background:#e2e2e2;
+}
+.CloudNoteLeftNav li>span{
+    width: 35px;
+    height: 40px;
+    display: block;
+    float: left;
+    text-align: center;
+    line-height: 40px;
+    font-size: 16px;
+}
+.CloudNoteContent{
+    float: left;
+    width: calc(100% - 200px);
+    height: 100%;
+    overflow: auto;
+}
+.CNoteTimeCon{
+    width: 100%;
+    margin-top: 5px;
+}
+.CNoteTimeLine{
+    float: left;
+    width: 100%;
+    height: 100%;
+}
+.CNoteTime{
+    width: 99px;
+    height: 25px;
+    background: #43495a;
+    color: #fff;
+    border-radius: 0px 30px 30px 0px;
+    -webkit-border-radius: 0px 50px 50px 0px;
+    -moz-border-radius: 0px 30px 30px 0px;
+    line-height: 25px;
+    text-align: center;
+    margin-top: 5px;
+}
+.CNoteUl{
+    width: 100%;
+    float: left;
+    height: 100%;
+    padding: 5px;
+}
+.CNoteShow{
+    float: left;
+    width: 100%;
+    height: 45px;
+    line-height: 35px;
+    background: #fbf3dd;
+    border: 1px solid #e2e2e2;
+    padding: 5px;
+    margin-top: 5px;
+}
+.CNoteShow *{
+    float: left;
+}
+.CNoteShowType{
+    color: #565656;
+    width: 35px;
+    height: 35px;
+    line-height: 35px;
+    text-align: center;
+    font-size: 16px;
+}
+.CNoteShowTime{
+    width: 70px;
+    height: 35px;
+    line-height: 35px;
+    text-align: center;
+}
+.CNoteShow p{
+    width: calc(100% - 175px);
+    height: 100%;
+    color: #565656;
+    text-overflow:ellipsis;
+    white-space: nowrap;
+}
+.CNoteShow .CNoteShow-Control{
+
+}
+.CNoteShow .CNoteShow-Control button,.CNoteShow .CNoteShow-Control input{
+    width: 35px;
+    height: 35px;
+    font-size: 16px;
+    background: none;
+}
+.CloudNoteBtnArea{
+    position: absolute;
+    right: 20px;
+    bottom: 20px;
+    text-align: center;
+}
+.CloudNoteAddBtn{
+    width: 45px;
+    height: 45px;
+    border: none;
+    border-radius: 44px;
+    -webkit-border-radius: 44px;
+    -moz-border-radius: 44px;
+    background: #43495a;
+    color: #fff
+}
+.CloudNoteAddBtn:active,.CloudNoteAddBtnActive{
+    width: 40px;
+    height: 40px;
+    transform: rotate(135deg);
+    -ms-transform: rotate(135deg);
+    -moz-transform: rotate(135deg);
+    -webkit-transform: rotate(135deg);
+    background: #E83C3C;
+}
+.CloudNoteBtnContainer{
+    width: 45px;
+    height: 120px;
+    display: none;
+}
+.CloudNoteBtnContainer button{
+    width: 45px;
+    height: 45px;
+    margin: 5px 0px;
+    border-radius: 100%;
+    -webkit-border-radius: 100%;
+    -moz-border-radius: 100%;
+    background: #43495a;
+    color: #fff;
+    -webkit-animation-duration:.3s;animation-duration:.3s;-webkit-animation-fill-mode:both;animation-fill-mode:both;
+    animation-name:slideInUp
+}
+.NoteAddTitle{
+    width: 100%;
+    height: 35px;
+    line-height: 35px;
+    text-indent: 10px;
+    background: #43495A;
+    font-size: 14px;
+    padding-left: 50px;
+}
+.NoteAddTitle img{
+    float: left;
+    width: 39px;
+    position: absolute;
+    top: 10px;
+    z-index: 1;
+    left: 10px;
+}
+.NoteAddTitle p{
+    position: absolute;
+    top: 11px;
+    color: #fff;
+}
+.NoteAddArea{
+    width: 100%;
+    height: 325px;
+    border: none;
+    border-top: 2px solid #e4e4e4;
+    border-radius: 0;
+    -webkit-border-radius: 0px;
+    -moz-border-radius: 0px;
+    padding: 15px;
+    resize: none;
+    overflow: auto;
+}
+.NoteSubBtn{
+    width: 60px;
+    height: 40px;
+    position: absolute;
+    right: -60px;
+    bottom: 40px;
+    border-radius: 50px 0px 0px 50px;
+    -webkit-border-radius: 50px 0px 0px 50px;
+    -moz-border-radius: 50px 0px 0px 50px;
+    border: none;
+    background: #4CAF50;
+    color: #fff;
+    background: #43495a;
+    color: #fbf3dd;
+    -webkit-animation-duration: .5s;
+    animation-duration: .5s;
+    font-size: 18px;
+}
+#CloudNoteAdd{
+    overflow: hidden;
+}
+.CloudNoteLoading,.CloudNoteNoTips{
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    position: relative;
+    margin: 38px auto;
+    border: 2px solid #888888;
+    margin-bottom: 10px;
+    margin-top: calc(40% - 25px);
+    display: block;
+}
+.CloudNoteLoading:after, .CloudNoteLoading:before,.CloudNoteNoTips:after, .CloudNoteNoTips:before{
+    position: absolute;
+    content:"";
+    background-color: #888888;
+}
+.CloudNoteLoading:after{
+    width: 22px;
+    height: 2px;
+    top: 22px;
+    left: 22px;
+    -webkit-transform-origin: 1px 1px;
+    -moz-transform-origin: 1px 1px;
+    transform-origin: 1px 1px;
+    -webkit-animation: minhand 2s linear infinite;
+    -moz-animation: minhand 2s linear infinite;
+    animation: minhand 2s linear infinite;
+}
+.CloudNoteLoading:before{
+    width: 15px;
+    height: 2px;
+    top: 22px;
+    left: 22px;
+    -webkit-transform-origin: 1px 1px;
+    -moz-transform-origin: 1px 1px;
+    transform-origin: 1px 1px;
+    -webkit-animation: hrhand 8s linear infinite;
+    -moz-animation: hrhand 8s linear infinite;
+    animation: hrhand 8s linear infinite;
+}
+.CloudNoteNoTips:after{
+    width: 22px;
+    height: 2px;
+    top: 22px;
+    left: 22px;
+    -webkit-transform-origin: 1px 1px;
+    -moz-transform-origin: 1px 1px;
+    transform-origin: 1px 1px;
+    -webkit-transform: rotate(-90deg);
+}
+.CloudNoteNoTips:before{
+    width: 15px;
+    height: 2px;
+    top: 22px;
+    left: 22px;
+    -webkit-transform-origin: 1px 1px;
+    -moz-transform-origin: 1px 1px;
+    transform-origin: 1px 1px;
+}
+.CloudNoteLoadingTips{
+    font-size: 16px;
+    text-align: center;
+    color: #828282;
+}
+@-webkit-keyframes minhand{
+    0%{-webkit-transform:rotate(0deg)}
+    100%{-webkit-transform:rotate(360deg)}
+}
+@-moz-keyframes minhand{
+    0%{-moz-transform:rotate(0deg)}
+    100%{-moz-transform:rotate(360deg)}
+}
+@keyframes minhand{
+    0%{transform:rotate(0deg)}
+    100%{transform:rotate(360deg)}
+}
+@-webkit-keyframes hrhand{
+    0%{-webkit-transform:rotate(0deg)}
+    100%{-webkit-transform:rotate(360deg)}
+}
+@-moz-keyframes hrhand{
+    0%{-moz-transform:rotate(0deg)}
+    100%{-moz-transform:rotate(360deg)}
+}
+@keyframes hrhand{
+    0%{transform:rotate(0deg)}
+    100%{transform:rotate(360deg)}
+}
+/*日历*/
+#CloudCalendar {
+    width: 750px;
+}
+#CloudCalendar .CloudCalendarHeader {
+    position: relative;
+    width: 100%;
+    height: 37px;
+    border-bottom: 1px solid #e2e2e2;
+    background-color: #e7e5e7;
+}
+#CloudCalendar .CloudCalendarHeader ul {
+    position: absolute;
+    left: 41%;
+    top: 8px;
+    overflow: hidden;
+    border-radius: 3px;
+    font-size: 0;
+}
+#CloudCalendar .CloudCalendarHeader ul li {
+    display: inline-block;
+    width: 62px;
+    height: 24px;
+    line-height: 24px;
+    font-size: 14px;
+    text-align: center;
+    background-color: #fff;
+    cursor: default;
+}
+#CloudCalendar .CloudCalendarHeader ul li.cur {
+    color: #fff;
+    background-color: #43495A;
+}
+#CloudCalendar .sidebar {
+    float: left;
+    width: 167px;
+    height: 609px;
+    border-right: 1px solid #d4dad3;
+    background-color: rgba(255, 255, 255, .9);
+}
+#CloudCalendar .sidebar .wrapper {
+    width: 100%;
+    padding: 12px 0;
+    border-bottom: 1px solid #c8d6c7;
+}
+#CloudCalendar .sidebar .title {
+    position: relative;
+    text-align: center;
+}
+#CloudCalendar .sidebar .btn {
+    padding: 0 10px;
+    position: absolute;
+    cursor: default;
+}
+#CloudCalendar .sidebar .btn-prev {
+    left: 8px;
+}
+#CloudCalendar .sidebar .btn-next {
+    right: 8px;
+}
+#CloudCalendar .sidebar .date {}
+#CloudCalendar .sidebar .week {
+    height: 20px;
+    padding-top: 10px;
+    line-height: 20px;
+    font-size: 0;
+    text-align: center;
+}
+#CloudCalendar .sidebar .week li {
+    display: inline-block;
+    font-size: 12px;
+    width: 22px;
+    height: 20px;
+    text-align: center;
+}
+#CloudCalendar .sidebar .day {
+    text-align: center;
+    font-size: 0;
+}
+#CloudCalendar .sidebar .day li {
+    display: inline-block;
+    width: 18px;
+    height: 18px;
+    margin: 2px;
+    line-height: 18px;
+    font-size: 12px;
+    text-align: center;
+    color: #ccc;
+    cursor: default;
+}
+#CloudCalendar .sidebar .day li.cur-month {
+    color: #333;
+}
+#CloudCalendar .sidebar .day li.cur-day {
+    color: #fff;
+    background-color: #FF6D6D;
+    border-radius: 50%;
+}
+#CloudCalendar .container {
+    position: relative;
+    float: left;
+    width: 100%;
+    height: 572px;
+    background-color: #fff;
+}
+#CloudCalendar .container .render {
+    display: none;
+}
+#CloudCalendar .container .render-show {
+    display: block;
+}
+#renderMonth {
+    padding-top: 5px;
+}
+#renderMonth .title {
+    padding-left: 16px;
+    line-height: 42px;
+    font-size: 30px;
+}
+#renderMonth .week {
+    height: 33px;
+    line-height: 33px;
+    border-bottom: 1px solid #e2e2e2;
+    font-size: 0;
+}
+#renderMonth .week li {
+    display: inline-block;
+    width: 107px;
+    font-size: 18px;
+    text-align: right;
+    padding-right: 5px;
+}
+#renderMonth .day {
+    font-size: 0;
+}
+#renderMonth .day li {
+    display: inline-block;
+    width: 107px;
+    height: 82px;
+    padding: 6px;
+    border-right: 1px solid #e6e5e6;
+    border-bottom: 1px solid #e6e5e6;
+    box-sizing: border-box;
+    font-size: 14px;
+    vertical-align: top;
+    color: #ccc;
+    background-color: #fff;
+    overflow-y: auto;
+}
+#renderMonth .day li.cur-month {
+    color: #333;
+}
+#renderMonth .day li.cur-day {
+    color: #333;
+}
+#renderMonth .day li.weekend {
+    background-color: #f4f6f7;
+}
+#renderMonth .day li p {
+    margin-bottom: 8px;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+#renderMonth .day li .info {
+    height: 20px;
+}
+#renderMonth .day li .lunar {
+    float: left;
+}
+#renderMonth .day li .first-lunarday {
+    position: relative;
+    left: -5px;
+    border-bottom: 1px solid #ff6d6d;
+}
+#renderMonth .day li .first-lunarJanuary {
+    position: relative;
+    left: -5px;
+    border-bottom: 2px solid #ff6d6d;
+}
+#renderMonth .day li .date {
+    float: right;
+}
+#renderMonth .day li.cur-day .date {
+
+}
+#renderMonth .day li.cur-day .date em {
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    line-height: 20px;
+    margin-right: 2px;
+    text-align: center;
+    color: #fff;
+    background-color: #ff6d6d;
+    border-radius: 50%;
+}
+#renderMonth .day li .festival {
+    display: none;
+    padding-left: 10px;
+    height: 16px;
+    line-height: 16px;
+    color: #333;
+    background-color: #f9d8f8;
+    cursor: default;
+}
+#renderMonth .day li .festival.show {
+    display: block;
+}
+#renderMonth .day li .term {
+    display: none;
+    color: #333;
+    height: 16px;
+    line-height: 16px;
+    padding-left: 10px;
+    background-color: #a7d1ed;
+    cursor: default;
+}
+#renderMonth .day li .term.show {
+    display: block;
+}
+#renderMonth .day li .term-b{
+    color: #fff;
+    background: #43495a;
+    height: 16px;
+    line-height: 16px;
+    padding-left: 10px;
+}
+#renderFullYear {
+    padding-top: 5px;
+}
+#renderFullYear > .title {
+    width: 617px;
+    height: 42px;
+    padding: 0 0 10px 16px;
+}
+#renderFullYear > .title h2 {
+    display: inline-block;
+    line-height: 42px;
+    font-size: 30px;
+}
+#renderFullYear > .title p {
+    float: right;
+    margin-top: 10px;
+}
+#renderFullYear > .title .lunar-year {}
+#renderFullYear > .title .lunar-year i {
+    display: inline-block;
+    margin: 9px 6px 0 0;
+    width: 16px;
+    height: 3px;
+    background-color: #FF6D6D;
+    vertical-align: top;
+}
+#renderFullYear > .title .info {}
+#renderFullYear > .title .info i {
+    display: inline-block;
+    width: 14px;
+    height: 1px;
+    margin-top: -3px;
+    margin-right: 5px;
+    background-color: #ff6d6d;
+    vertical-align: middle;
+}
+#renderFullYear .month {
+    font-size: 0;
+}
+#renderFullYear .month .item {
+    display: inline-block;
+    width: 25%;
+    padding: 0 10px;
+    box-sizing: border-box;
+}
+#renderFullYear .month .title {
+    padding-left: 8px;
+    font-size: 18px;
+    color: #ff6d6d;
+}
+#renderFullYear .month .week {
+    font-size: 0;
+    text-align: center;
+}
+#renderFullYear .month .week li {
+    display: inline-block;
+    width: 22px;
+    height: 20px;
+    line-height: 20px;
+    font-size: 12px;
+    color: #ccc;
+}
+#renderFullYear .month .day {
+    text-align: center;
+    font-size: 0;
+}
+#renderFullYear .month .day li {
+    display: inline-block;
+    width: 18px;
+    height: 18px;
+    line-height: 18px;
+    margin: 2px;
+    text-align: center;
+    color: #ccc;
+    font-size: 10px;
+    cursor: default;
+}
+#renderFullYear .month .day li.lunar-first {
+    border-bottom: 1px solid #ff6d6d;
+}
+#renderFullYear .month .day li.lunar-january {
+    border-bottom: 2px solid #ff6d6d;
+}
+#renderFullYear .month .day li.cur-month {
+    color: #333;
+}
+#renderFullYear .month .day li.cur-day {
+    color: #fff;
+    background-color: #ff6d6d;
+    border-radius: 50%;
+}
+#CloudCalendarControl {
+    position: absolute;
+    top: 14px;
+    right: 11px;
+    font-size: 0;
+}
+#CloudCalendarControl input {
+    display: inline-block;
+    height: 25px;
+    text-align: center;
+    border: 1px solid #dadada;
+    border-radius: 4px;
+    font-size: 14px;
+    color: #333;
+    background: #fff;
+    vertical-align: top;
+    outline: none;
+    margin-right: 2px;
+}
+#CloudCalendarControl .btn {
+    width: 21px;
+}
+#CloudCalendarControl .btn-prev {}
+#CloudCalendarControl .btn-next {}
+#CloudCalendarControl .today {
+    width: 52px;
+}
+
+/* 弹出框 */
+#CloudCalendarPopup {
+    display: none;
+    position: absolute;
+    left: 200px;
+    top: 100px;
+    width: 260px;
+    height: 104px;
+    background-color: #f4f6f7;
+    box-shadow: 0 0 2px rgba(0, 0, 0, .3);
+    border-radius: 6px;
+    border: 1px solid #efefef;
+}
+#CloudCalendarPopup.CloudCalendarPopup-right {}
+#CloudCalendarPopup .title {
+    height: 43px;
+    padding: 0 15px;
+    line-height: 43px;
+    margin-bottom: 8px;
+    border-bottom: 1px solid #d6d6d6;
+}
+#CloudCalendarPopup .arrow {
+    display: none;
+    position: absolute;
+    top: 36px;
+    width: 0;
+    height: 0;
+    border-width: 14px;
+    border-style: solid;
+}
+#CloudCalendarPopup .arrow:after {
+    content: "";
+    position: absolute;
+    top: -14px;
+    width: 0;
+    height: 0;
+    border-width: 14px;
+    border-style: dashed;
+}
+#CloudCalendarPopup .arrow-left {
+    left: -29px;
+    border-color: transparent #d6d6d6 transparent transparent;
+}
+#CloudCalendarPopup.CloudCalendarPopup-left .arrow-left {
+    display: block;
+}
+#CloudCalendarPopup .arrow-left:after {
+    left: -13px;
+    border-color: transparent #f4f6f7 transparent transparent;
+}
+#CloudCalendarPopup .arrow-right {
+    right: -29px;
+    border-color: transparent transparent transparent #d6d6d6;
+}
+#CloudCalendarPopup.CloudCalendarPopup-right .arrow-right {
+    display: block;
+}
+#CloudCalendarPopup .arrow-right:after {
+    right: -13px;
+    border-color: transparent transparent transparent #f4f6f7;
+}
+#CloudCalendarPopup .date,
+#CloudCalendarPopup .lunar {
+    padding: 0 15px;
+    line-height: 20px;
+}

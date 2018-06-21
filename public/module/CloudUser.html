@@ -1,0 +1,36 @@
+<div class="CloudUserMain">
+    <button class="sf-icon-qrcode" id="CloudUserQrCode"></button>
+    <div class="CloudUserLeft">
+        <div class="CloudUserLeftUp">
+        </div>
+        <div class="CloudUserLeftDown">
+            <img id="UserHeadInfo">
+            <div class="CloudUserInfoS">
+                <p class="CloudUserName"></p>
+                <p class="CloudUserAge"></p>
+                <p class="CloudUserAge"></p>
+            </div>
+        </div>
+    </div>
+    <div class="CloudUserRight">
+        <p class="CloudUserTitle">个人信息</p>
+        <form>
+            <div class="CloudUserLine"><label>名称：</label><p id="username"></p></div>
+            <div class="CloudUserLine"><label>邮箱：</label><p id="email"></p></div>
+            <div class="CloudUserLine"><label>手机：</label><input type="text" onkeyup="this.value=this.value.replace(/[^0-9]/g,'')" maxlength="11" value="" id="phone" name="phone"></div>
+            <div class="CloudUserLine"><label>生日：</label><input type="text" onfocus="$.Calendar(false,this);" maxlength="9" value="" id="birth" name="birth"></label></div>
+            <div class="CloudUserLine"><label>性别：</label>
+                <select class="CloudUserSex" name="sex" id="sex">
+                    <option>男</option>
+                    <option>女</option>
+                </select>
+            </div>
+            <div class="CloudUserUpload" tooltip="更换头像" onclick="this.childNodes[0].click()"><input style="border: none;" type="file" name="userhead"  onchange="javascript:$.UploadPreview(this,$('#UserHeadInfo')[0]);" id="user_picc" /></div>
+            <div class="CloudUserLine" style="height: 72px;"><label style="line-height: 27px;">签名:</label><textarea id="underwrite" maxlength="50" name="underwrite"></textarea></div>
+            <button onClick="return CloudMain.User.Update(this.parentNode);">更新信息</button>
+        </form>
+    </div>
+</div>
+<script>
+    CloudMain.User.get(true);
+</script>

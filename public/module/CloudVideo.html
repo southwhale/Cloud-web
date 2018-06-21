@@ -1,0 +1,130 @@
+<div class="CloudVideoMain">
+  <ul class="CloudVideoHead">
+    <img draggable="false" src="./public/img/bar/themes1/video.png">
+    <li><p> 首页</p><div class="VideoFuncLine" style="width:100%;"></div></li>
+    <li><p> 搜索</p><div class="VideoFuncLine"></div></li>
+    <li style="display:none;"><p> 播放</p><div class="VideoFuncLine"></div></li>
+  </ul>
+  <div class="CloudVideoContainer">
+    <div class="CloudVideoContent">
+      <div class="CloudVideoClassify">
+        <p>我的视频</p>
+        <ul class="CloudVideoNormalClassify">
+          <li ripple class="CloudVideoActive">每日精选</li>
+          <li ripple>我的收藏</li>
+        </ul>
+        <p>分类</p>
+        <ul class="CloudVideoAllClassify">
+          <li ripple>创意</li>
+          <li ripple>开胃</li>
+          <li ripple>旅行</li>
+          <li ripple>预告</li>
+          <li ripple>动画</li>
+          <li ripple>剧情</li>
+          <li ripple>广告</li>
+          <li ripple>运动</li>
+          <li ripple>音乐</li>
+          <li ripple>记录</li>
+          <li ripple>时尚</li>
+          <li ripple>萌宠</li>
+          <li ripple>搞笑</li>
+          <li ripple>游戏</li>
+          <li ripple>科普</li>
+          <li ripple>集锦</li>
+          <li ripple>生活</li>
+          <li ripple>综艺</li>
+        </ul>
+      </div>
+      <div class="CloudVideoContentRight" id="CVRecommendPage">
+        <span class='CloudVideoLoading'></span>
+      </div>
+      <div class="CloudVideoContentRight">
+        <p style="text-align: center;color:#fff">暂不可用</p>
+      </div>
+      <div class="CloudVideoAllClassifyContainer">
+        <div class="CloudVideoAllClassifyHead"></div>
+        <div class="CloudVideoAllClassifyMain">
+          <span class='CloudVideoLoading'></span>
+        </div>
+      </div>
+    </div>
+    <div class="CloudVideoContent CloudVideoSearchContainer">
+      <div class="CloudVideoSearchHead">
+        <input type="text" placeholder="搜索" id="CloudVideoSearch">
+        <p></p>
+      </div>
+      <div class="CloudVideoSearchMain">
+      </div>
+    </div>
+    <div class="CloudVideoContent" style="overflow: auto;display: none">
+      <div class="CloudVideoPlayContainer">
+        <p class="CloudVideoPlayingTitle">正在播放：</p>
+        <div style="float:left;width: 75%">
+          <div class="CloudVideoPlayArea">
+            <video class="CloudVideoPlayer"></video>
+            <ul class="CloudVideoDistinctList"></ul>
+            <div class="CloudVideoPlayControlContainer">
+              <div class="CloudVideoPCSliderContainer">
+                <div class="CloudVideoPCSlider"></div>
+                <div class="CloudVideoPCTmpSlider"></div>
+              </div>
+              <div class="CloudVideoPCLeft">
+                <div class="sf-icon-play"></div>
+                <span class="sf-icon-stop"></span>
+                <p>00:00/00:00</p>
+              </div>
+              <div class="CloudVideoPCRight">
+                <div class="CloudVideolimpid">默认</div>
+                <span style="font-size: 12px" data="1">1X</span>
+                <div class="sf-icon-volume-up"></div>
+                <div class="CloudVideoVolumnContainer"><div class="CloudVideoVolumnSlider" style="width: 100%"></div></div>
+                <span class="sf-icon-arrows-alt"></span>
+              </div>
+            </div>
+          </div>
+          <div class="CloudVideoAuthor">
+            <img draggable="false"><span></span>
+            <p></p>
+          </div>
+          <div class="CloudVideoFunc">
+            <span>操作：</span>
+            <button class="sf-icon-download" id="CloudVideoDownLoad"> 下载</button>
+          </div>
+          <div class="CloudVideoTags"></div>
+          <div class="CloudVideoComment">
+            <p class="CloudVideoCommentTitle">发布评论</p>
+            <div class="CloudVideoCommentList" id="CloudVideoSendComment">
+              <img src=""><span></span>
+              <textarea spellcheck="false" maxlength="250">写下你的牛评</textarea>
+              <span class="CloudVideoCommentCount">0/250</span>
+              <button>发布</button>
+            </div>
+          </div>
+          <div class="CloudVideoComment">
+            <span class='CloudVideoLoading'></span>
+          </div>
+        </div>
+        <div class="CloudVideoPlayRight">
+          <p class="CloudVideoPlayRightTitle">相关视频</p>
+          <ul class="CloudVideoPlayRightContent"></ul>
+        </div>
+      </div>
+      <div class="CloudVideoBackTop sf-icon-arrow-up"></div>
+      <div class="CloudVideoPlayContainer" style="display: none">作者</div>
+      <div class="CloudVideoPlayContainer" style="display: none">
+        <div class="CloudVideoTagHead">
+          <button onclick="CloudVideo.PlayControl.showPlay()" class="sf-icon-angle-left">返回</button>
+          <p></p>
+          <p style="font-size: 14px;margin-bottom: 20px;"></p>
+          <ul class="CloudVideoTagSwitch">
+            <li>视频</li>
+            <li>动态</li>
+          </ul>
+        </div>
+        <div class="CloudVideoTagContainer" style="display: block"></div>
+        <div class="CloudVideoTagContainer"></div>
+      </div>
+    </div>
+  </div>
+</div>
+<script src="public/js/CloudVideo.js"></script>

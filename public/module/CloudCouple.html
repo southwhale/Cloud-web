@@ -1,0 +1,13 @@
+<div class="CloudCouple">
+    <div class="CloudCoupleHead">
+        <img draggable="false" src="./public/img/logo/logo.png">
+        <p>问题反馈</p>
+    </div>
+    <form>
+        <div class="CloudCoupleLine">描述一下问题类型</div>
+        <input type="text" maxlength="50" spellcheck="false" id="report_title">
+        <div class="CloudCoupleLine">描述一下问题详情...</div>
+        <textarea id="report_content" spellcheck="false"></textarea>
+        <button onclick="return CloudMain.User.couple(this);">提交</button>
+    </form>
+</div>

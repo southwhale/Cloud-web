@@ -1,0 +1,196 @@
+#CustomFunc5>.windowTitle{
+	position: relative;
+	z-index: 1;
+}
+#CustomFunc5>.windowTitle p{
+	display: none;
+}
+.CloudDocumentMain{
+	width: 100%;
+	height: 100%;
+}
+.CloudDocumentHead{
+	width: 100%;
+	height: 35px;
+	line-height: 35px;
+	background: #4d97ff;
+	padding-left: 50px;
+}
+.CloudDocumentHead img{
+	float: left;
+	width: 39px;
+	position: absolute;
+	top: 10px;
+	z-index: 1;
+	left: 10px;
+}
+.CloudDocumentHead li {
+	float: left;
+	margin-left: 15px;
+	height: 100%;
+	cursor: pointer;
+	position: relative;
+	top:-10px;
+}
+.CloudDocumentHead li p {
+	padding: 0 15px;
+	text-align: center;
+	font-size: 14px;
+	line-height: 32px;
+	color: #fff;
+}
+.CloudDocumentHead li>.fa {
+	display: block
+}
+.CloudDocumentFuncLine {
+	width: 0;
+	height: 3px;
+	background: #fff
+}
+.CloudDocumentFuncLine,.VideoCloudVideoHeadFuncMenu li:hover .CloudDocumentFuncLine {
+	-webkit-transition: all .35s;
+	-moz-transition: all .35s;
+	-o-transition: all .35s
+}
+.CloudDocumentHead li:hover .CloudDocumentFuncLine {
+	width: 100%!important
+}
+/*编辑器头部*/
+.CloudDomentEditorHead{
+	height: 35px;
+	margin-top: 25px;
+	background: #4d97ff;
+}
+.CloudDomentEditorHead *{
+	float: left;
+	line-height: 35px;
+	margin-top: -10px;
+	color: #fff;
+}
+.CloudDomentEditorHead span{
+	font-size: 14px;
+	padding-left: 60px;
+	cursor: pointer;
+}
+.CloudDomentEditorHead span>i{
+	font-size: 20px;
+	margin-right: 5px;
+	margin-top: -1px;
+}
+.CloudDomentEditorHead p{
+	padding-left: 20px;
+	font-weight:600;
+}
+/*编辑器*/
+.CloudDomentEditor{
+	width: 100%;
+	height: calc(100% - 60px);
+	padding: 0px;
+	background: #4d97ff;
+}
+/*主容器*/
+.CloudDocumentMainContainer{
+	width: 100%;
+	height: calc(100% - 35px);
+}
+.CloudDomentEditorContainer{
+	padding: 0px;
+	position: absolute;
+	top:0;
+	background: #fff;
+	display: none;
+	width: 100%;
+	height: 100%;
+	z-index: unset!important;
+}
+.CloudDomentControlMain{
+	float: left;
+	width: calc(100% - 200px);
+	height: 100%;
+	position: relative;
+}
+/*主容器左侧导航*/
+.CloudDocumentLeftNav{
+	float: left;
+	width: 200px;
+	height: 100%;
+	border-right: 1px solid #e2e2e2;
+}
+.CloudDocumentLeftNav li {
+	width: 100%;
+	height: 40px;
+	line-height: 40px;
+	color: #676767;
+}
+.CloudDocumentLeftNav li>span {
+	width: 35px;
+	height: 40px;
+	display: block;
+	float: left;
+	text-align: center;
+	line-height: 40px;
+	font-size: 16px;
+}
+.CloudDocumentLeftNav li:hover, .CloudDocumentLeftNavActive {
+	background: #e2e2e2;
+}
+/*添加按钮*/
+.CloudDomentAdd{
+	position: absolute;
+	right: 20px;
+	bottom: 20px;
+	width: 45px;
+	height: 45px;
+	border-radius: 100%;
+	-webkit-border-radius: 100%;
+	-moz-border-radius: 100%;
+	background: #4d97ff;
+	color: #fff;
+}
+/*文档*/
+.CloudDomentBlock{
+	width: 90px;
+	height: 90px;
+	float: left;
+	margin: 10px 0px 0px 10px;
+	text-align: center;
+	border-radius: 5px;
+	-webkit-border-radius: 5px;
+	-moz-border-radius: 5px;
+	cursor: pointer;
+}
+.CloudDomentBlock img{
+	margin-top: 5px
+}
+.CloudDomentBlock p{
+	color: #333333;
+	text-overflow: ellipsis;
+	word-break: break-all;
+	font-size: 12px;
+}
+.CloudDomentBlock:hover,.CloudDomentActive{
+	background: #dfdfdf;
+}
+.CloudDomentBlock span{
+	display: none;
+}
+/*编辑器*/
+.CloudDocumentEditor{
+	width: 100%;
+	height: calc(100% - 35px);
+}
+/*加载*/
+/*没有提示*/
+.CloudDocumentNoTips,.CloudDocumentLoading{
+	color: #828282;
+	text-align: center;
+	font-size: 16px;
+	z-index: -1;
+	position: absolute;
+	top: calc(50% - 32px);
+	left: calc(50% - 56px);
+}
+.CloudDocumentNoTips span,.CloudDocumentLoading span{
+	width: 100%;
+	font-size: 40px;
+}
