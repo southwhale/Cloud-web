@@ -3,7 +3,7 @@ ini_set("error_reporting","E_ALL & ~E_NOTICE");
 // 指定允许其他域名访问
 header('Access-Control-Allow-Origin:*');
 // 响应类型
-header('Access-Control-Allow-Methods:POST');
+header('Access-Control-Allow-Methods:POST,GET');
 // 响应头设置
 header('Access-Control-Allow-Headers:x-requested-with,content-type');
 $route=include "web.php";

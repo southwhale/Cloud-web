@@ -68,17 +68,17 @@ class UserController
                     $array[] = ["state" => "success","msg"=>"欢迎回来，".$user,"user" => $_SESSION["user"], "head" => $head,"userid"=>$userid,"background"=>$background];//登录成功
                     $this->check($this->root, $userid);
                 } else {
-                    $array[] = ["state" => "fail","msg"=>"密码错误"];
+                    $array[] = ["state" => "error","msg"=>"密码错误"];
                 }
             } else {
                 $sql4 = "select email from user where (username='$user' or email='$user' or phone ='$user' or CloudID='$user')";
                 $result3 = $this->db->query($sql4);
                 while ($row = mysqli_fetch_assoc($result3)) {
-                    $array[] = ["state" => "fail","msg"=>"未激活的用户","email" => $row['email']];
+                    $array[] = ["state" => "error","msg"=>"未激活的用户","email" => $row['email']];
                 }
             }
         } else {
-            $array[] = ["state" => "fail","msg"=>"该用户不存在"];//没有该用户
+            $array[] = ["state" => "error","msg"=>"该用户不存在"];//没有该用户
         }
         echo json_encode($array);
         mysqli_close($this->db);
@@ -105,7 +105,7 @@ class UserController
         $validate = $_POST["validate"];
         $validate = md5($validate);
         if ($validate != $_SESSION["verification"]) {
-            $array[] = ["state" => "fail","msg"=>"验证码错误"];
+            $array[] = ["state" => "error","msg"=>"验证码错误"];
             echo json_encode($array);
             mysqli_close($this->db);
             exit();
@@ -115,13 +115,13 @@ class UserController
         $result = $this->db->query($sql);
         $num = mysqli_num_rows($result);
         if ($num) {
-            $array[] = ["state" => "fail","msg"=>"用户名已被使用"];
+            $array[] = ["state" => "error","msg"=>"用户名已被使用"];
         } else {
             $sql = "select email from user where email = '$email'";
             $result = $this->db->query($sql);
             $num2 = mysqli_num_rows($result);
             if ($num2) {
-                $array[] = ["state" => "fail","msg"=>"邮箱已被注册"];
+                $array[] = ["state" => "error","msg"=>"邮箱已被注册"];
             } else {
                 $userid = createGuid();
                 $passcode = createRandomStr(10);
@@ -133,7 +133,7 @@ class UserController
                     $content = '<table cellpadding="0" align="center" width="600px" style="margin:0 auto;text-align:left;position:relative;font-size:14px;font-family:微软雅黑;line-height:1.5;box-shadow:0 0 4px 0 #8e8e8e;border-collapse:collapse;background:#fff"><tbody><tr bgcolor="#2682fc" style="color:#fff"><td height="250px" style="padding:0 25px;font-size:16px"><b style="font-size:20px">尊敬的用户</b><p>欢迎使用Cloud<br>这是您注册时发出的注册激活邮件<br>请复制下列代码前往激活页面激活(<a style="color:#fff" href="' . getadder() . '/verify?user=' . $user . '">激活页面</a>)<br>如非本人操作，请忽略此邮件</p><span style="font-size:20px;color:#d0d0d0"><span>激活码：</span>' . $passcode . '</span></td></tr><tr><th valign="middle"><img draggable="false" src=' . getadder() . '/public/img/logo/logo.png><span style="float:right;line-height:63px;padding-right:10px;color:#949494">' . today() . '</span></th></tr></tbody></table>';
                     sendEmail($email, 'Cloud 邮箱激活验证邮件', $content);
                 } else {
-                    $array[] = ["state" => "fail","msg"=>"注册失败"];
+                    $array[] = ["state" => "error","msg"=>"注册失败"];
                 }
             }
         }
@@ -148,7 +148,7 @@ class UserController
         $validate = $_POST["validate"];
         $validate = md5($validate);
         if ($validate != $_SESSION["verification"]) {
-            $array[] = ["state" => "fail",'msg'=>"验证码错误"];
+            $array[] = ["state" => "error",'msg'=>"验证码错误"];
         } else {
             $sql = "select username from user where username = '$user'";
             $result = $this->db->query($sql);
@@ -159,7 +159,7 @@ class UserController
                 while ($num = mysqli_fetch_assoc($result)) {
                     $sql_email = $num["email"];
                     if ($email != $sql_email) {
-                        $array[] = ["state" => "fail","msg"=>"邮箱地址不正确"];
+                        $array[] = ["state" => "error","msg"=>"邮箱地址不正确"];
                     } else {
                         $newpass = createRandomnum(5);
                         $content = '<table cellpadding="0" align="center" width="600px" style="margin:0 auto;text-align:left;position:relative;font-size:14px;font-family:微软雅黑;line-height:1.5;box-shadow:0 0 4px 0 #8e8e8e;border-collapse:collapse;background:#fff"><tbody><tr bgcolor="#2682fc" style="color:#fff"><td height="250px" style="padding:0 25px;font-size:16px"><b style="font-size:20px">尊敬的用户:' . $user . '</b><p>系统已处理了您找回密码的请求，并为您设置了新的密码<br>请使用我们提供的新密码登录并及时修改此密码<br>如非本人操作，请忽略此邮件</p><span style="font-size:20px;color:#d0d0d0"><span>密码：</span>' . $newpass . '</span></td></tr><tr><th><img draggable="false" src=' . getadder() . '/public/img/logo/logo.png><span style="float:right;line-height:63px;padding-right:10px;color:#949494">' . today() . '</span></th></tr></tbody></table>';
@@ -171,7 +171,7 @@ class UserController
                     }
                 }
             } else {
-                $array[] = ["state" => "fail","msg"=>"用户不存在"];
+                $array[] = ["state" => "error","msg"=>"用户不存在"];
             }
         }
         echo json_encode($array);
@@ -195,7 +195,7 @@ class UserController
             }
         }else{
             $array[]=[
-              "state"=>"fail",
+              "state"=>"error",
               "msg"=>"用户不存在或已激活"
             ];
         }
@@ -218,7 +218,7 @@ class UserController
                 $userid=$num3['userid'];
             }
         } else {
-            $array[] = ["state" => "fail","msg"=>"密码错误"];
+            $array[] = ["state" => "error","msg"=>"密码错误"];
             echo json_encode($array);
             mysqli_close($this->db);
             exit();
@@ -238,9 +238,9 @@ class UserController
             $_SESSION["ss_id"] = $session_id;
             $sql = "update user set login_id = '$session_id', login_time= now() where userid='$userid'";
             $this->db->query($sql);
-            $array[] = ["state" => 'sucess',"msg"=>$name.' 账号已激活'];
+            $array[] = ["state" => 'success',"msg"=>$name.' 账号已激活'];
         } else {
-            $array[] = ["state" => "fail","msg"=>"激活码不存在"];
+            $array[] = ["state" => "error","msg"=>"激活码不存在"];
         }
         echo json_encode($array);
         mysqli_close($this->db);

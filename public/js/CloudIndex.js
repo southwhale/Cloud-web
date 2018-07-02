@@ -220,7 +220,9 @@ CloudIndex.Post=function(a){
                 $.Toast(rs.msg);
                 CloudIndex.fail(a, text);
                 if(type === 0) {
-                    if(rs.state==='fail'){
+                    if(rs.state==='success'){
+                        CloudIndex.Success(rs);
+                    }else{
                         if(rs.msg==='未激活的用户'){
                             $.Toast('查看您的激活邮箱'+rs.email);
                             CloudIndex.switch(3,TextArr[0].value);
@@ -228,34 +230,32 @@ CloudIndex.Post=function(a){
                         TextArr[0].value = TextArr[1].value = '';
                         TextArr[0].onblur();
                         TextArr[1].onblur();
-                    }else{
-                        CloudIndex.Success(rs);
                     }
                 }else if(type===1){
-                    if(rs.state==='fail'){
+                    if(rs.state==='success'){
+                        $.Toast('即将前往激活页面');
+                        CloudIndex.switch(3,TextArr[0].value);
+                    }else{
                         TextArr[3].value = '';
                         TextArr[3].onblur();
                         CloudIndex.PassCode[0].click();
-                    }else{
-                        $.Toast('即将前往激活页面');
-                        CloudIndex.switch(3,TextArr[0].value);
                     }
                 }else if(type===2) {
-                    if(rs.state==='fail'){
+                    if(rs.state==='success'){
+                        CloudIndex.switch(0);
+                    }else{
                         TextArr[2].value = '';
                         TextArr[2].onblur();
                         CloudIndex.PassCode[1].click();
-                    }else{
-                        CloudIndex.switch(0);
                     }
                     TextArr[0].value = TextArr[1].value = '';
                 }else{
-                    if(rs.state==='fail'){
+                    if(rs.state==='success'){
+                        CloudIndex.switch(0);
+                    }else{
                         TextArr[1].value = TextArr[2].value = '';
                         TextArr[1].onblur();
                         TextArr[2].onblur();
-                    }else{
-                        CloudIndex.switch(0);
                     }
                 }
             }

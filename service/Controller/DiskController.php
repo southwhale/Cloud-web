@@ -1,5 +1,6 @@
 <?php
 /*网盘应用控制器*/
+$allow=1;
 include "ServerController.php";
 
 class DiskController
